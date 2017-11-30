@@ -1,0 +1,50 @@
+{
+  "name": "goai-webpage",
+  "version": "1.1.0",
+  "description": "webpage for the goai community",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server",
+    "build": "webpack --config webpack.config-build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gpuopenanalytics/gpuopenanalytics.github.io.git"
+  },
+  "keywords": [
+    "goai",
+    "gpu",
+    "analytics"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gpuopenanalytics/gpuopenanalytics.github.io/issues"
+  },
+  "homepage": "https://github.com/gpuopenanalytics/gpuopenanalytics.github.io#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "bulma": "^0.6.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "normalize.css": "^7.0.0",
+    "react-css-modules": "^4.7.1",
+    "react-router-dom": "^4.2.2",
+    "resolve-url-loader": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.5"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}

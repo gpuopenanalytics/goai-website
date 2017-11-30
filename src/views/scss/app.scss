@@ -1,0 +1,11 @@
+/* SCSS using css modules. Note, use composition pattern with only one module per element */
+
+@import "bulma/sass/utilities/_all";
+@import "bulma/sass/grid/columns";
+
+
+.app-container {
+		background-color: gray;
+		color: white;
+		/* composes: table from './table.css'; */
+}
