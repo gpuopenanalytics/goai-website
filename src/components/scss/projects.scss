@@ -1,0 +1,83 @@
+/* SCSS using css modules. Note, use composition pattern with only one module per element */
+/* Note: cant have blank class */
+
+@import '../../views/scss/composeBulma';
+@import '../../views/scss/composeColors';
+
+
+.pg {
+	margin-top: 0.3rem;
+}
+
+.link {
+    color: rgba(129, 226, 102, 1);
+    font-weight: bold;
+}
+
+.link:visited {
+    color: rgba(129, 226, 102, 1);
+}
+
+.link:hover {
+    color: rgba(113, 198, 89, 1);
+}
+
+.title {
+    composes: titleColorGray;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.subheader {
+    composes: titleColorGray;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0rem;
+}
+
+
+.section-container-bg {
+    composes: section container is-fluid;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 10vh;
+    padding-bottom: 16vh;
+    background: url("../../img/TesBG-01.png");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: contain;
+}
+
+.section-header-row {
+    composes: columns;
+}
+
+.section-header {
+    composes: column is-4 is-offset-2;
+}
+
+.section-header-left{
+    composes: column is-4 is-offset-2;
+    padding-top: 0;
+    margin-bottom: -2rem;
+}
+
+.section-header-right{
+    composes: column is-4;
+    padding-top: 0;
+    margin-bottom: -2rem;
+}
+
+.section-content-row {
+    composes: columns;
+}
+
+.section-content-left{
+    composes: column is-4 is-offset-2;
+    padding-top: 0;
+}
+
+.section-content-right{
+    composes: column is-4;
+    padding-top: 0;
+}

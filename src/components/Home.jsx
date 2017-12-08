@@ -3,11 +3,7 @@ import CSSModules from "react-css-modules";
 import styles from "./scss/home";
 
 // Icons from https://github.com/levrik/mdi-react
-import HexOutlineIcon from "mdi-react/hexagonOutlineIcon";
-import HexPlusIcon from "mdi-react/shapePolygonPlusIcon";
 import MatrixIcon from "mdi-react/matrixIcon";
-import CubeOutlineIcon from "mdi-react/cubeOutlineIcon";
-import CubeFoldIcon from "mdi-react/cubeUnfoldedIcon";
 import GithubIcon from "mdi-react/githubCircleIcon";
 import SlackIcon from "mdi-react/slackIcon";
 import GroupPlusIcon from "mdi-react/accountMultiplePlusIcon";
@@ -39,7 +35,7 @@ class Home extends React.Component {
 
 						<div styleName="hero-action-row">
 							<div styleName="action-col">
-								<a href="/#/community">
+								<a href="#/community">
 									<div styleName="action-tile">
 										<div styleName="action-header">
 											<GroupPlusIcon styleName="btn-icon-large" />
@@ -91,7 +87,7 @@ class Home extends React.Component {
 								efficiently.
 							</span>
 							<p>
-								<a href="/#/about" styleName="link">
+								<a href="#/about" styleName="link">
 									 Learn more in our About section.
 								</a>
 							</p>
@@ -141,7 +137,7 @@ class Home extends React.Component {
 								additional data manipulation.
 							</span>
 							<p>
-								<a href="/#/projects" styleName="link">
+								<a href="#/projects" styleName="link">
 									 Learn more in our Projects section.
 								</a>
 							</p>
@@ -165,13 +161,13 @@ class Home extends React.Component {
 								committer, or by getting in touch.
 							</span>
 							<p>
-								<a href="/#/community" styleName="link">
+								<a href="#/community" styleName="link">
 									Learn more in our Community section.
 								</a>
 							</p>
 						</div>
 						<div styleName="section-content-right">
-							<a href="/#/community">
+							<a href="#/community">
 								<div styleName="action-tile">
 									<div styleName="action-header">
 										<GroupPlusIcon styleName="btn-icon" />

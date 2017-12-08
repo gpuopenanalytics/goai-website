@@ -33,7 +33,7 @@
 
 .hero-body {
     composes: hero hero-body;
-    background-color: white;
+    background-color: rgb(243, 243, 243);;
 }
 
 
@@ -109,9 +109,9 @@
     margin-right: 0;
     padding-top: 22vh;
     background: url("../../img/TesBG-01.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: contain;
 }
 
 
@@ -219,6 +219,10 @@
 
     .section-header-left, .section-header-right{
         margin-bottom: 0;
+    }
+
+    .section-container, .section-container-bg {
+        padding-top: 10vh;
     }
 
     .big-icon-svg {
