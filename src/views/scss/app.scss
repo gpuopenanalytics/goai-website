@@ -1,11 +1,25 @@
 /* SCSS using css modules. Note, use composition pattern with only one module per element */
+/* Global Style Reference */
 
-@import "bulma/sass/utilities/_all";
-@import "bulma/sass/grid/columns";
+@import './composeBulma';
+@import './composeColors';
 
+h1,h2,h3,h4,h5 {
+    font-family: "Montserrat", sans-serif;
+}
 
-.app-container {
-		background-color: gray;
-		color: white;
-		/* composes: table from './table.css'; */
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    min-width: 375px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.full-container {
+    composes: grayColorBrightBG blackColorBrightText;
 }

@@ -17,6 +17,7 @@ module.exports = {
 		compress: true,
 		port: 9000
 	},
+	devtool: 'source-map',
 	resolve: {
 		extensions: [".js", ".jsx", ".scss", ".sass", ".css"]
 	},
@@ -33,13 +34,13 @@ module.exports = {
 				test: /\.(scss|sass)$/,
 				use: [
 					{
-						loader: "resolve-url-loader" // needed for sourceMaps
+						loader: "style-loader?modules" // creates style nodes from JS strings
 					},
 					{
-						loader: "style-loader?modules&sourceMap" // creates style nodes from JS strings
+						loader: "css-loader?modules&importLoaders=1&localIdentName=[local]_[hash:base64:5]" // with CSS modules
 					},
 					{
-						loader: "css-loader?modules&importLoaders=1&localIdentName=[path][name]__[local]___[hash:base64:5]" // with CSS modules
+						loader: "resolve-url-loader" // needs sourceMaps
 					},
 					{
 						loader: "sass-loader?modules&sourceMap",

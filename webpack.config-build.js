@@ -12,6 +12,9 @@ const extractSass = new ExtractTextPlugin({
 	disable: process.env.NODE_ENV === "development"
 });
 
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const optimizeCssAssets = new OptimizeCssAssetsPlugin()
+
 const production = new webpack.DefinePlugin({
 	"process.env.NODE_ENV": JSON.stringify("production")
 });
@@ -48,7 +51,7 @@ module.exports = {
 					use: [
 						{
 							loader:
-								"css-loader?modules&importLoaders=1&localIdentName=[path][name]__[local]___[hash:base64:5]" // with CSS modules
+								"css-loader?modules&importLoaders=1&localIdentName=cls[hash:base64:5]" // with CSS modules
 						},
 						{
 							loader: "sass-loader?modules",
@@ -75,5 +78,5 @@ module.exports = {
 			}
 		]
 	},
-	plugins: [extractSass, production, uglyfy, htmlWebpack]
+	plugins: [extractSass, optimizeCssAssets, production, uglyfy, htmlWebpack]
 };

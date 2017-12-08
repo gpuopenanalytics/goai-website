@@ -1,0 +1,33 @@
+/* SCSS using css modules. Note, use composition pattern with only one module per element */
+
+@import '../../views/scss/composeColors';
+@import '../../views/scss/composeBulma';
+
+.foot {
+	font-family: "Montserrat", sans-serif;
+	font-variant: small-caps;
+	font-size: 0.9rem;
+	padding: 1rem 0;
+	margin: 8vh 0 0 0;
+	text-align: center;
+	composes: hiColorBrightBG;
+	color: white;
+}
+
+.item {
+	display: inline-block;
+	color: white;
+	padding: 0rem 1rem;
+	cursor: pointer;
+}
+
+.item:hover {
+	border-bottom: 2px solid white;
+}
+
+.icon {
+	fill: white;
+	width: 0.9rem;
+	height :0.9rem;
+	margin-bottom: -0.2rem;
+}

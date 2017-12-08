@@ -1,0 +1,43 @@
+/* SCSS using css modules. Note, use composition pattern with only one module per element */
+
+@import '../../views/scss/composeColors';
+@import '../../views/scss/composeBulma';
+
+
+.navbar {
+	composes: navbar is-transparent grayColorDarkText;
+	background-color: white;
+	font-family: "Montserrat", sans-serif;
+	font-variant: small-caps;
+	font-size: 1.2rem;
+}
+
+
+.navbar-menu {
+	composes: navbar-menu;
+}
+
+.navbar-menu-is-active {
+	composes: navbar-menu is-active;
+}
+
+.navbar-logo{
+	composes: navbar-item;
+	font-size: 1.6rem;
+}
+
+.button-navbar-burger {
+	composes: button navbar-burger;
+}
+
+.button-navbar-burger-is-active {
+	composes: button navbar-burger is-active;
+}
+
+.navbar-item {
+	color: rgba(52, 56, 53, 1) !important;
+}
+
+.navbar-item:hover{
+	color: rgba(121, 214, 97, 1) !important;
+}
