@@ -69,7 +69,7 @@ class News extends React.Component {
 		const newsList = this.buildNews();
 
 		return (
-			<article>
+			<article styleName="full-content">
 				<section styleName="section-container-bg">
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">

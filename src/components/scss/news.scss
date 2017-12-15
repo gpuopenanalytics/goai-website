@@ -4,6 +4,9 @@
 @import '../../views/scss/composeBulma';
 @import '../../views/scss/composeColors';
 
+.full-content{
+    flex: 1 0 auto;
+}
 
 .loading {
 	font-size: 1.2rem;
@@ -14,33 +17,35 @@
 	margin-top: 0.3rem;
 }
 
-
 .link {
-    color: rgba(129, 226, 102, 1);
+    composes: hiColorDarkText;
     font-weight: bold;
 }
 
-.link:visited {
-    color: rgba(129, 226, 102, 1);
-}
 
 .link:hover {
-    color: rgba(113, 198, 89, 1);
+    color: rgba(121, 214, 97, 1);
+}
+
+.link-ico {
+    composes: hiColorBrightFill;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-bottom: -0.2rem;
 }
 
 .title {
-    composes: titleColorGray;
+    composes: titleColor;
     font-size: 3rem;
     margin-bottom: 1.5rem;
 }
 
 .subheader {
-    composes: titleColorGray;
+    composes: titleColor2;
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 0rem;
 }
-
 
 .section-container-bg {
     composes: section container is-fluid;

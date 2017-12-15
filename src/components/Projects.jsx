@@ -5,7 +5,7 @@ import styles from "./scss/projects";
 class Projects extends React.Component {
 	render() {
 		return (
-			<article>
+			<article styleName="full-content">
 				<section styleName="section-container-bg">
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">

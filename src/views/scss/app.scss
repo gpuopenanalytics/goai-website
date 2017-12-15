@@ -8,7 +8,8 @@ h1,h2,h3,h4,h5 {
     font-family: "Montserrat", sans-serif;
 }
 
-body {
+html, body {
+	height: 100%;
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     margin: 0;
@@ -16,11 +17,19 @@ body {
     min-width: 375px;
 }
 
-a {
+a {	
 	text-decoration: none;
 }
 
+/* for flexbox sticky footer */
+#root {
+  height:100vh;
+}
+
 .full-container {
+	height: 100vh;
     composes: blackColorBrightText;
     background-color: white;
+ 	display: flex;
+  	flex-direction: column;
 }

@@ -18,8 +18,12 @@ $color7: #070707;
 }
 
 /* title color */
-.titleColorGray {
-	color: #bfbfbf;
+.titleColor {
+	color: $color3;
+}
+
+.titleColor2 {
+	color: $color4;
 }
 
 

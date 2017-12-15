@@ -11,7 +11,10 @@ import GoogleGroupIcon from "mdi-react/forumIcon";
 import SourceForkIcon from "mdi-react/sourceForkIcon";
 import SourceMergeIcon from "mdi-react/sourceMergeIcon";
 import SourcePullIcon from "mdi-react/sourcePullIcon";
+import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
 
+import GOAIgroup from "../img/GOAI-com.png";
+import GOAIgdf from "../img/GOAI-gdf.png";
 import GOAIlogo from "../img/GOAI-logo-v1.png";
 import anacondalogo from "../img/anaconda_Logo.jpg";
 import arrowlogo from "../img/apacheArrow_logo.jpg";
@@ -24,7 +27,7 @@ import mapdlogo from "../img/mapd_logo.jpg";
 class Home extends React.Component {
 	render() {
 		return (
-			<article>
+			<article styleName="full-content">
 				<section styleName="hero-body">
 					<div styleName="container">
 						<div styleName="hero-logo-row">
@@ -64,7 +67,6 @@ class Home extends React.Component {
 				</section>
 
 				<section styleName="section-container">
-
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
 							<h1 styleName="title"> About GOAI </h1>
@@ -80,7 +82,7 @@ class Home extends React.Component {
 								data frameworks enabling developers and
 								statistical researchers to accelerate data
 								science on GPUs.
-								<br/> <br/>
+								<br /> <br />
 								GOAI will foster the development of a data
 								science ecosystem on GPUs by allowing resident
 								applications to interchange data seamlessly and
@@ -88,17 +90,17 @@ class Home extends React.Component {
 							</span>
 							<p>
 								<a href="#/about" styleName="link">
-									 Learn more in our About section.
+									<HexagonIcon styleName="link-ico" /> Learn more in our About
+									section.
 								</a>
 							</p>
 						</div>
 						<div styleName="section-content-right">
 							<div styleName="content-fill">
-								EFFICIENT DATA PROCESSING GRAPHIC (5-10x, 25-100x)
+								<img src={GOAIgroup} styleName="img-diagram"/>
 							</div>
 						</div>
 					</div>
-
 				</section>
 
 				<section styleName="section-container-bg">
@@ -111,7 +113,7 @@ class Home extends React.Component {
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
 							<div styleName="content-fill">
-								DATA FRAME GRAPHIC
+								<img src={GOAIgdf} styleName="img-diagram"/>
 							</div>
 						</div>
 						<div styleName="section-content-right">
@@ -128,7 +130,8 @@ class Home extends React.Component {
 								copying of in-memory data reducing compute time
 								and cost for high-performance analytics common
 								in artificial intelligence workloads.
-								<br/><br/>
+								<br />
+								<br />
 								Users of the MapD Core database can output the
 								results of a SQL query into the GPU Data Frame,
 								which then can be manipulated by the Anaconda
@@ -138,12 +141,12 @@ class Home extends React.Component {
 							</span>
 							<p>
 								<a href="#/projects" styleName="link">
-									 Learn more in our Projects section.
+									<HexagonIcon styleName="link-ico" /> Learn more in our Projects
+									section.
 								</a>
 							</p>
 						</div>
 					</div>
-
 				</section>
 
 				<section styleName="section-container">
@@ -162,7 +165,8 @@ class Home extends React.Component {
 							</span>
 							<p>
 								<a href="#/community" styleName="link">
-									Learn more in our Community section.
+									<HexagonIcon styleName="link-ico" /> Learn more in our Community
+									section.
 								</a>
 							</p>
 						</div>
@@ -192,7 +196,6 @@ class Home extends React.Component {
 
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
-							
 							<a href="https://github.com/gpuopenanalytics/libgdf/wiki/Technical-Overview">
 								<div styleName="action-tile">
 									<div styleName="action-header">
@@ -217,7 +220,6 @@ class Home extends React.Component {
 						</div>
 
 						<div styleName="section-content-right">
-
 							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics">
 								<div styleName="action-tile">
 									<div styleName="action-header">
@@ -245,37 +247,37 @@ class Home extends React.Component {
 					<div styleName="member-row">
 						<div styleName="member-row-item">
 							<a href="https://arrow.apache.org/">
-								<img src={arrowlogo} styleName="member-logo"/>
+								<img src={arrowlogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
 							<a href="https://anaconda.org/">
-								<img src={anacondalogo} styleName="member-logo"/>
+								<img src={anacondalogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
 							<a href="https://blazingdb.com/">
-								<img src={blazingdblogo} styleName="member-logo"/>
+								<img src={blazingdblogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
 							<a href="https://gunrock.github.io/gunrock/doc/latest/index.html">
-								<img src={gunrocklogo} styleName="member-logo"/>
+								<img src={gunrocklogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
 							<a href="https://www.graphistry.com/">
-								<img src={graphistrylogo} styleName="member-logo"/>
+								<img src={graphistrylogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
 							<a href="https://www.mapd.com/">
-								<img src={mapdlogo} styleName="member-logo"/>
+								<img src={mapdlogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
 							<a href="https://www.h2o.ai/">
-								<img src={h2ologo} styleName="member-logo"/>
+								<img src={h2ologo} styleName="member-logo" />
 							</a>
 						</div>
 					</div>
