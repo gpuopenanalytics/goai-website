@@ -2,39 +2,111 @@ import React, { Component } from "react";
 import CSSModules from "react-css-modules";
 import styles from "./scss/community";
 
+import GOAIgroup from "../img/GOAI-group-com.png";
+import GithubIcon from "mdi-react/githubCircleIcon";
+import EmailIcon from "mdi-react/emailIcon";
+import SlackIcon from "mdi-react/slackIcon";
+import GoogleGroupIcon from "mdi-react/forumIcon";
+
+
 class Community extends React.Component {
 	render() {
 		return (
 			<article styleName="full-content">
 				<section styleName="section-container-bg">
+					
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
 							<h1 styleName="title">The GOAI Community</h1>
 						</div>
 					</div>
+
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
 							<div styleName="subheader">Join the Initiative </div>
-							<p styleName="pg">
-								There are two primary ways for a project, group,
-								or company to join the GPU Open Analytics
-								Initiative.
+							<p>
+								There are many ways for a project, group,
+								individual, or company to join the GPU Open Analytics
+								Initiative (GOAI). Below are details. 
 							</p>
-							<p styleName="pg">
-								Just have some questions? <a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" styleName="link"> Connect with us on our Slack Team. </a>
+							<p>
+								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" styleName="link"> 
+									<SlackIcon styleName="link-icon" /> Just have some questions? Connect with us on our Slack team.
+								</a>
 							</p>
-							<div styleName="subheader"> 1 Become an Adopter </div>
-							<p styleName="pg">
+							<p>
+								<a href="mailto:admin@gpuopenanalytics.com?Subject=GOAI" title="email" styleName="link">
+									<EmailIcon styleName="link-icon" /> Or reach
+									us at admin@gpuopenanalytics.com.
+								</a>
+							</p>
+						</div>
+						<div styleName="section-content-right">
+							<img src={GOAIgroup} styleName="img-med" />
+						</div>
+					</div>
+
+					<div styleName="section-content-row">
+						<div styleName="section-content-left">
+							<div styleName="subheader">Become an Adopter </div>
+							<p>
 								Adopters are projects, products or groups that
 								are currently using or planning to use a GOAI
-								project. A database adding support for the GPU
-								DataFrame can be a GOAI adopter, for example.
-								Adopters should announce their plans on the
-								public GOAI mailing list and we will add a link
-								to their project on the GOAI website. <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link"> Let us know at our public Google Group. </a>
+								project. For example, a database adding support for the GPU
+								Data Frame can be a GOAI adopter.  
+								Adopters should <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link"> announce their plans on the
+								public GOAI mailing list, </a> and we will add a link
+								to their project on the GOAI website. 
 							</p>
-							<div styleName="subheader"> 2 Become a Member </div>
-							<p styleName="pg">
+							<p>
+								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">
+									<GoogleGroupIcon styleName="link-icon" /> Let us know you're using GOAI projects.
+								</a>
+							</p>
+						</div>
+						<div styleName="section-content-right">
+							<div styleName="subheader">Our Adopters</div>
+								<ul styleName="list-compact">
+									<li>Adopters pending...</li>
+								</ul>
+						</div>
+					</div>
+
+					<div styleName="section-content-row">
+						<div styleName="section-content-left">
+							<div styleName="subheader">Become a Contributor </div>
+							<p>
+								Contributors are any projects, groups,
+								or individuals that would like to help develop projects.
+								Since the GOAI is based around open projects, 
+								clone a repository on our GitHub channel and make a pull request.
+								To help faciliate the process, let us know of your plans <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link"> on our public Google Group. </a>
+							</p>
+							<p>
+							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">
+									<GoogleGroupIcon styleName="link-icon" /> Let us know that you want to contribute.
+								</a>
+							</p>
+						</div>
+						<div styleName="section-content-right">
+							<div styleName="subheader">Our Contributors</div>
+								<ul styleName="list-compact">
+									<li>Siu Kwan Lam</li>
+									<li>Arno Candel</li>
+									<li>Minggang Yu </li>
+									<li>Stanley Seibert</li>
+									<li>Jon Mckinney</li>
+									<li>Bill Maimone</li>
+									<li>Vinod Iyengar</li>
+									<li>Todd Mostak</li>
+								</ul>
+						</div>
+					</div>
+
+					<div styleName="section-content-row">
+						<div styleName="section-content-left">
+							<div styleName="subheader">Become a Member </div>
+							<p>
 								A member is responsible for stewardship of the
 								GOAI organization, including decision-making
 								about expanding GOAI to future projects,
@@ -86,25 +158,19 @@ class Community extends React.Component {
 								Existing members will vote on the admission of
 								new members based on the above criteria. Note
 								that adopters do not need to satisfy the above
-								requirements. <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link"> Apply for memebership at our public Google Group. </a>
+								requirements. <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link"> Apply 
+								for memebership on our public Google Group. </a>
+							</p>
+							<p>
+								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">
+									<GoogleGroupIcon styleName="link-icon" /> Announce your plans to join GOAI.
+								</a>
 							</p>
 
 						</div>
-
 						<div styleName="section-content-right">
-							<div styleName="subheader">Our Code Committers</div>
-							<ul styleName="list">
-								<li>Siu Kwan Lam</li>
-								<li>Arno Candel</li>
-								<li>Minggang Yu </li>
-								<li>Stanley Seibert</li>
-								<li>Jon Mckinney</li>
-								<li>Bill Maimone</li>
-								<li>Vinod Iyengar</li>
-								<li>Todd Mostak</li>
-							</ul>
 							<div styleName="subheader">Our Members</div>
-							<ul styleName="list">
+							<ul styleName="list-compact">
 								<li><a href="https://arrow.apache.org/" styleName="link"> Apache Arrow </a> </li>
 								<li><a href="https://anaconda.org/" styleName="link"> Anaconda </a> </li>
 								<li><a href="https://blazingdb.com/" styleName="link"> BlazindDB </a> </li>
@@ -113,12 +179,9 @@ class Community extends React.Component {
 								<li><a href="https://www.mapd.com/" styleName="link"> MapD </a> </li>
 								<li><a href="https://www.h2o.ai/" styleName="link"> H20.ai </a> </li>
 							</ul>
-							<div styleName="subheader">Our Adopters</div>
-							<ul styleName="list">
-								<li>Adopters pending...</li>
-							</ul>
 						</div>
 					</div>
+
 				</section>
 			</article>
 		);

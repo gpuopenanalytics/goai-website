@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import CSSModules from "react-css-modules";
 import styles from "./scss/about";
 
+import GOAIgroup from "../img/GOAI-group-com.png";
+import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
+import SlackIcon from "mdi-react/slackIcon";
+import EmailIcon from "mdi-react/emailIcon";
+
 class About extends React.Component {
 	render() {
 		return (
@@ -9,27 +14,23 @@ class About extends React.Component {
 				<section styleName="section-container-bg">
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
-							<h1 styleName="title">
-								About GOAI
-							</h1>
+							<h1 styleName="title">About GOAI</h1>
 						</div>
 					</div>
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
 							<div styleName="subheader">Mission </div>
-							<p styleName="pg">
-								The GPU Open Analytics Initiative (GOAI) seeks to foster open collaboration between
+							<p>
+								The GPU Open Analytics Initiative (GOAI) seeks
+								to foster and develop open collaboration between
 								GPU analytics projects and products to enable
 								data scientists to efficiently combine the best
 								tools for their workflows.
 							</p>
-						</div>
-
-						<div styleName="section-content-right">
 							<div styleName="subheader">
 								Why This is Necessary
 							</div>
-							<p styleName="pg">
+							<p>
 								Most GPU-enabled software treats the GPU as an
 								implementation detail to be hidden from their
 								external interfaces. This is a sensible choice
@@ -43,11 +44,29 @@ class About extends React.Component {
 								between libraries and applications without
 								needing to move data off the GPU.
 							</p>
-							<p styleName="pg">
+							<p>
 								<a href="#/community" styleName="link">
-									Interested in becoming a member or adopter? Learn more at our Community page.
+									<HexagonIcon styleName="link-icon" /> Interested in becoming a member or joining
+									in other ways? Learn more at our Community
+									page.
 								</a>
 							</p>
+							<p>
+								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" styleName="link">
+									<SlackIcon styleName="link-icon" /> Have
+									some questions? Ask us on our Slack team.
+								</a>
+							</p>
+							<p>
+								<a href="mailto:admin@gpuopenanalytics.com?Subject=GOAI" title="email" styleName="link">
+									<EmailIcon styleName="link-icon" /> Or reach
+									us at admin@gpuopenanalytics.com.
+								</a>
+							</p>
+						</div>
+
+						<div styleName="section-content-right">
+							<img src={GOAIgroup} styleName="img-full" />
 						</div>
 					</div>
 				</section>

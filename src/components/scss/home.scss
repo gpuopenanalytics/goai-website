@@ -17,7 +17,7 @@
     color: rgba(121, 214, 97, 1);
 }
 
-.link-ico {
+.link-icon {
     composes: hiColorBrightFill;
     width: 1.2rem;
     height: 1.2rem;
@@ -48,7 +48,7 @@
 }
 
 .hero-tile {
-    composes: column is-half;
+    composes: column is-one-third;
 }
 
 .hero-logo {
@@ -89,9 +89,8 @@
     color: white;
     font-variant: small-caps;
     font-weight: bold;
-    font-size: 1.2rem;
     vertical-align: top;
-    padding-left: 0.5rem;
+    padding: 0.5rem;
 }
 
 .btn-icon-large {
@@ -100,40 +99,44 @@
     height: 2rem;
 }
 
+.btn-icon {
+    composes: hiColorBrightFill;
+    width: 2rem;
+    height: 2rem;
+}
+
+.quote-icon {
+    composes: hiColorBrightFill;
+    width: 2rem;
+    height: 2rem;
+}
+
+.large-quote {
+    font-size: 2rem;
+    line-height: 1.9rem;
+}
+
+.small-quote {
+    font-size: 1.2rem;
+}
 
 .section-container {
     composes: section container is-fluid;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 20vh;
-    padding-bottom: 15vh;
+    padding-top: 15vh;
+    padding-bottom: 10vh;
 }
 
 .section-container-bg {
     composes: section container is-fluid;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 22vh;
+    padding-top: 15vh;
     background: url("../../img/TesBG-01.png");
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}
-
-.img-diagram {
-    width: 100%;
-}
-
-
-.big-icon-svg {
-    composes: hiColorBrightFill;
-    position: relative;
-    width: 2rem;
-    height: 2rem;
-    top: 50%;
-    left: 50%;
-    margin-left: -2rem;
-    margin-top: -2rem;
 }
 
 .section-header-row {
@@ -170,38 +173,7 @@
     padding-top: 0;
 }
 
-.content-fill{
-    width: 100%;
-    height: 100%;
-    min-height: 10rem;
-    background-color: rgba(0,0,0,0.01);
-    text-align: center;
-}
 
-.subsection-content {
-    composes: columns;
-}
-
-.subsection-content-left {
-    composes: column;
-}
-
-.subsection-content-right {
-    composes: column;
-}
-
-.subaction-tile {
-    composes: boxShadow;
-    cursor: pointer;
-    margin: 0.5rem;
-    border-radius: 4px;
-}
-
-.btn-icon {
-    composes: hiColorBrightFill;
-    width: 2rem;
-    height: 2rem;
-}
 
 .member-row {
     composes: columns is-centered is-mobile is-multiline;
@@ -227,12 +199,18 @@
         margin-bottom: 0;
     }
 
+    .action-footer {
+        padding-top: 1rem;
+    }
+
     .section-header-left, .section-header-right{
         margin-bottom: 0;
     }
 
     .section-container, .section-container-bg {
         padding-top: 10vh;
+        background-repeat: repeat-y;
+
     }
 
     .big-icon-svg {

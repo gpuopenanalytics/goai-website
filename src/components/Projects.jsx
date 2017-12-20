@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import CSSModules from "react-css-modules";
 import styles from "./scss/projects";
 
+import GOAIgdf from "../img/GOAI-group-gdf.png";
+import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
+import GithubIcon from "mdi-react/githubCircleIcon";
+import SlackIcon from "mdi-react/slackIcon";
+import StackOverflowIcon from "mdi-react/stackOverflowIcon";
+
+
 class Projects extends React.Component {
 	render() {
 		return (
@@ -15,13 +22,17 @@ class Projects extends React.Component {
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
 							<div styleName="subheader">Projects Overview</div>
-							<p styleName="pg">
-								Currently, GOAI is supporting the GPU DataFrame
-								project, which will enable tabular data to be
+							<p>Our projects are based around an open platform, which is the foundation of the GPU analytics ecosystem.
+								Members will help guide the development of projects, but anyone can be a contributor. And because its open, 
+								anyone can freely use the projects. 
+							</p>
+							<p>
+								Currently, GOAI is supporting the GPU Data Frame
+								project (GDF), which will enable tabular data to be
 								directly exchanged between libraries and
-								applications via GPU memory. We expect other
+								applications on the GPU. We expect other
 								projects to be added in the future, such as a
-								graph standard for GPU DataFrames.
+								graph standard for the GDF.
 							</p>
 						</div>
 
@@ -29,7 +40,7 @@ class Projects extends React.Component {
 							<div styleName="subheader">
 								GPU Data Frame (GDF)
 							</div>
-							<p styleName="pg">
+							<p>
 								The basic approach for the GPU Data Frame (GDF)
 								is pretty simple: if applications and libraries
 								agree on an in-memory data format for tabular
@@ -39,19 +50,41 @@ class Projects extends React.Component {
 								CUDA driver allows device pointers to be moved
 								between processes.
 							</p>
-							<p styleName="pg">
-								Currently, the GDF format is a subset of the 
-								<a href="https://arrow.apache.org/docs/memory_layout.html" styleName="link"> Apache Arrow specification</a>. The precise subset has not been fully
+							<p>
+								<img src={GOAIgdf} styleName="img-full" />
+							</p>
+							<p>
+								At the moment, the GDF format is a subset of the 
+								<a href="https://arrow.apache.org/docs/memory_layout.html" styleName="link"> Apache Arrow specification</a>.
+								The precise subset has not been fully
 								defined yet, but currently includes numerical
 								columns, and will soon include
 								dictionary-encoded columns (sometimes called
 								"categorical" columns in other data frame
 								systems).
 							</p>
-							<p styleName="pg">
+							<p>
 								<a href="https://github.com/gpuopenanalytics/libgdf/wiki/Technical-Overview" styleName="link">
-									Learn more at the Github Technical Overview.
+									<GithubIcon styleName="link-icon" /> Learn more at the Github Technical Overview.
 								</a>
+							</p>
+							<p>
+								<a href="https://github.com/gpuopenanalytics/libgdf/wiki/Technical-Overview" styleName="link">
+									<SlackIcon styleName="link-icon" /> Ask questions on our Slack team.
+								</a>
+							</p>
+							<p>
+								<a href="https://stackoverflow.com/questions/tagged/gdf" styleName="link">
+									<StackOverflowIcon styleName="link-icon" /> Or resort to StackOverflow.
+								</a>
+							</p>
+
+							<br/><br/>
+							<div styleName="subheader">
+								GDF Graph
+							</div>
+							<p>
+								In planning stage...
 							</p>
 						</div>
 					</div>

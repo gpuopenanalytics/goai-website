@@ -13,21 +13,16 @@
 	color: titleColorGray;
 }
 
-.pg {
-	margin-top: 0.3rem;
-}
-
 .link {
     composes: hiColorDarkText;
     font-weight: bold;
 }
 
-
 .link:hover {
     color: rgba(121, 214, 97, 1);
 }
 
-.link-ico {
+.link-icon {
     composes: hiColorBrightFill;
     width: 1.2rem;
     height: 1.2rem;
@@ -51,11 +46,11 @@
     composes: section container is-fluid;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 10vh;
-    padding-bottom: 16vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
     background: url("../../img/TesBG-01.png");
     background-repeat: repeat-y;
-    background-position: center;
+    background-position: top;
     background-size: contain;
 }
 
@@ -140,4 +135,8 @@
 	padding: 0.5rem;
 }
 
+@media only screen and (max-width:768px){
+
+
+}
 

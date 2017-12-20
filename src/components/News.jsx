@@ -3,6 +3,7 @@ import CSSModules from "react-css-modules";
 import styles from "./scss/news";
 
 import placeHolder from "../img/poly-place.jpg";
+import TwitterIcon from "mdi-react/twitterIcon";
 
 class News extends React.Component {
 	constructor(props) {
@@ -12,26 +13,12 @@ class News extends React.Component {
 			isLoaded: true,
 			newsData: [
 				{
-					title: "NVIDIA TITAN V",
-					date: "12.08.2007",
-					img: "https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/TITAN/TITANV/nvidia-titan-v-gallery-b-641-u.jpg",
-					description:"NVIDIA’s supercomputing GPU architecture is now here for your PC, and fueling breakthroughs in every industry.",
-					link: "https://www.nvidia.com/en-us/titan/titan-v/"
-				},
-				{
-					title: "Generic Title",
-					date: "12.08.2007",
+					title: "GOAI Site Updated",
+					date: "12.19.2017",
 					img: "",
-					description: "Small description goes here",
-					link: "#"
+					description: "We have new style and content for our GOAI site",
+					link: "http://www.gpuopenanalytics.com"
 				},
-				{
-					title: "Generic Title That Is Very Long And Will Run Over",
-					date: "12.08.2000",
-					img: "",
-					description: "Small description goes here. And here.",
-					link: "#"
-				}
 			]
 		};
 	}
@@ -79,14 +66,13 @@ class News extends React.Component {
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
 							<div styleName="subheader">Latest News </div>
-							<p styleName="pg">
-								Keep up to date with the latest events around
-								GOAI. Want updates even faster?{" "}
-								<a
-									href="https://twitter.com/hashtag/GOAI?src=hash"
-									styleName="link"
-								>
-									Look for our #GOAI hashtag on twitter.
+							<p>
+								Keep up to date with events, blogs, and news around
+								GOAI. 
+							</p>
+							<p>
+								<a href="https://twitter.com/hashtag/GOAI?src=hash"styleName="link">
+									<TwitterIcon styleName="link-icon" /> Want news faster? Look for our #GOAI hashtag on twitter.
 								</a>
 							</p>
 						</div>

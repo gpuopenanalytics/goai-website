@@ -6,16 +6,16 @@ import styles from "./scss/home";
 import MatrixIcon from "mdi-react/matrixIcon";
 import GithubIcon from "mdi-react/githubCircleIcon";
 import SlackIcon from "mdi-react/slackIcon";
-import GroupPlusIcon from "mdi-react/accountMultiplePlusIcon";
 import GoogleGroupIcon from "mdi-react/forumIcon";
 import SourceForkIcon from "mdi-react/sourceForkIcon";
 import SourceMergeIcon from "mdi-react/sourceMergeIcon";
 import SourcePullIcon from "mdi-react/sourcePullIcon";
 import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
+import QuoteOpenIcon from "mdi-react/formatQuoteOpenIcon"
+import QuoteCloseIcon from "mdi-react/formatQuoteCloseIcon"
 
-import GOAIgroup from "../img/GOAI-com.png";
-import GOAIgdf from "../img/GOAI-gdf.png";
-import GOAIlogo from "../img/GOAI-logo-v1.png";
+import GOAIlogo from "../img/GOAI-logo-v1.png"
+
 import anacondalogo from "../img/anaconda_Logo.jpg";
 import arrowlogo from "../img/apacheArrow_logo.jpg";
 import blazingdblogo from "../img/blazingDB_logo.jpg";
@@ -38,30 +38,44 @@ class Home extends React.Component {
 
 						<div styleName="hero-action-row">
 							<div styleName="action-col">
-								<a href="#/community">
+								<a href="#/about">
 									<div styleName="action-tile">
 										<div styleName="action-header">
-											<GroupPlusIcon styleName="btn-icon-large" />
+											<MatrixIcon styleName="btn-icon-large" />
 										</div>
 										<div styleName="action-footer">
-											join goai
+											learn more about gpu analytics
 										</div>
 									</div>
 								</a>
 							</div>
 
 							<div styleName="action-col">
-								<a href="https://github.com/gpuopenanalytics">
+								<a href="https://github.com/gpuopenanalytics/demo-docker">
 									<div styleName="action-tile">
 										<div styleName="action-header">
 											<SourcePullIcon styleName="btn-icon-large" />
 										</div>
 										<div styleName="action-footer">
-											adopt goai
+											try out the open platform
 										</div>
 									</div>
 								</a>
 							</div>
+
+							<div styleName="action-col">
+								<a href="#/community">
+									<div styleName="action-tile">
+										<div styleName="action-header">
+											<SourceMergeIcon styleName="btn-icon-large" />
+										</div>
+										<div styleName="action-footer">
+											collaborate with the inititive
+										</div>
+									</div>
+								</a>
+							</div>
+
 						</div>
 					</div>
 				</section>
@@ -75,30 +89,23 @@ class Home extends React.Component {
 
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
-							<span>
-								Anaconda, H2O.ai, and MapD Technologies have
-								announced the formation of the GPU Open
-								Analytics Initiative (GOAI) to create common
-								data frameworks enabling developers and
-								statistical researchers to accelerate data
-								science on GPUs.
-								<br /> <br />
-								GOAI will foster the development of a data
-								science ecosystem on GPUs by allowing resident
-								applications to interchange data seamlessly and
-								efficiently.
-							</span>
+							<p>
+								Our vision is enabling analysts to easily open accelerated applications, 
+								ask data questions, run algorithms, build models, and visualize results seamlessly within GPUs.
+							</p>
 							<p>
 								<a href="#/about" styleName="link">
-									<HexagonIcon styleName="link-ico" /> Learn more in our About
+									<HexagonIcon styleName="link-icon" /> Learn more in our About
 									section.
 								</a>
 							</p>
 						</div>
 						<div styleName="section-content-right">
-							<div styleName="content-fill">
-								<img src={GOAIgroup} styleName="img-diagram"/>
-							</div>
+							<p styleName="large-quote">
+								<QuoteOpenIcon styleName="quote-icon" />
+									We want to make accelerated, end-to-end GPU analytics easy.
+								<QuoteCloseIcon styleName="quote-icon" />
+							</p>
 						</div>
 					</div>
 				</section>
@@ -112,36 +119,20 @@ class Home extends React.Component {
 
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
-							<div styleName="content-fill">
-								<img src={GOAIgdf} styleName="img-diagram"/>
-							</div>
+							<p styleName="large-quote">
+								<QuoteOpenIcon styleName="quote-icon" />
+									We are developing our platform to be open, accessible, and available for broad adoption.
+								<QuoteCloseIcon styleName="quote-icon" />
+							</p>
 						</div>
 						<div styleName="section-content-right">
-							<div styleName="subheader">
-								Inital Project: GPU Data Frame
-							</div>
-							<span>
-								Our first project: an open source GPU Data Frame
-								(GDF) with a corresponding Python API. The GPU
-								Data Frame is a common API that enables
-								efficient interchange of data between processes
-								running on the GPU. End-to-end computation on
-								the GPU avoids transfers back to the CPU or
-								copying of in-memory data reducing compute time
-								and cost for high-performance analytics common
-								in artificial intelligence workloads.
-								<br />
-								<br />
-								Users of the MapD Core database can output the
-								results of a SQL query into the GPU Data Frame,
-								which then can be manipulated by the Anaconda
-								NumPy-like Python API or used as input into the
-								H2O suite of machine learning algorithms without
-								additional data manipulation.
-							</span>
+							<p>
+								Our projects are based around an open platform, which is the foundation of the GPU analytics ecosystem.
+								Members will help guide the development of projects, but anyone can be a contributor. And because its open, anyone can freely use the projects. 
+							</p>
 							<p>
 								<a href="#/projects" styleName="link">
-									<HexagonIcon styleName="link-ico" /> Learn more in our Projects
+									<HexagonIcon styleName="link-icon" /> Learn more in our Projects
 									section.
 								</a>
 							</p>
@@ -158,91 +149,25 @@ class Home extends React.Component {
 
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
-							<span>
-								We are just starting with GOAI. Help build our
-								community by becoming an adopter, member,
-								committer, or by getting in touch.
-							</span>
+							<p>
+								We are just starting with the GOAI. Help make our community stronger by participating in the inititive.
+							</p>
 							<p>
 								<a href="#/community" styleName="link">
-									<HexagonIcon styleName="link-ico" /> Learn more in our Community
+									<HexagonIcon styleName="link-icon" /> Learn more in our Community
 									section.
 								</a>
 							</p>
 						</div>
 						<div styleName="section-content-right">
-							<a href="#/community">
-								<div styleName="action-tile">
-									<div styleName="action-header">
-										<GroupPlusIcon styleName="btn-icon" />
-									</div>
-									<div styleName="action-footer">
-										become a member
-									</div>
-								</div>
-							</a>
-							<a href="https://github.com/gpuopenanalytics">
-								<div styleName="action-tile">
-									<div styleName="action-header">
-										<SourcePullIcon styleName="btn-icon" />
-									</div>
-									<div styleName="action-footer">
-										become an adopter
-									</div>
-								</div>
-							</a>
+							<p styleName="large-quote">
+								<QuoteOpenIcon styleName="quote-icon" />
+									Learn, try, and collaborate with us.
+								<QuoteCloseIcon styleName="quote-icon" />
+							</p>
 						</div>
 					</div>
 
-					<div styleName="section-content-row">
-						<div styleName="section-content-left">
-							<a href="https://github.com/gpuopenanalytics/libgdf/wiki/Technical-Overview">
-								<div styleName="action-tile">
-									<div styleName="action-header">
-										<MatrixIcon styleName="btn-icon" />
-									</div>
-									<div styleName="action-footer">
-										learn more about gdf
-									</div>
-								</div>
-							</a>
-
-							<a href="https://github.com/gpuopenanalytics">
-								<div styleName="action-tile">
-									<div styleName="action-header">
-										<SourceMergeIcon styleName="btn-icon" />
-									</div>
-									<div styleName="action-footer">
-										help develop
-									</div>
-								</div>
-							</a>
-						</div>
-
-						<div styleName="section-content-right">
-							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics">
-								<div styleName="action-tile">
-									<div styleName="action-header">
-										<GoogleGroupIcon styleName="btn-icon" />
-									</div>
-									<div styleName="action-footer">
-										join google groups
-									</div>
-								</div>
-							</a>
-
-							<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA">
-								<div styleName="action-tile">
-									<div styleName="action-header">
-										<SlackIcon styleName="btn-icon" />
-									</div>
-									<div styleName="action-footer">
-										chat on slack teams
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
 
 					<div styleName="member-row">
 						<div styleName="member-row-item">

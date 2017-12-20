@@ -10,6 +10,7 @@
 	font-family: "Montserrat", sans-serif;
 	font-variant: small-caps;
 	font-size: 1.2rem;
+	flex: 0 0 auto;
 }
 
 
@@ -40,4 +41,5 @@
 
 .navbar-item:hover{
 	color: rgba(121, 214, 97, 1) !important;
+	background-color: white !important;
 }

@@ -8,9 +8,6 @@
     flex: 1 0 auto;
 }
 
-.pg {
-	margin-top: 0.3rem;
-}
 
 .link {
     composes: hiColorDarkText;
@@ -21,11 +18,15 @@
     color: rgba(121, 214, 97, 1);
 }
 
-.link-ico {
+.link-icon {
     composes: hiColorBrightFill;
     width: 1.2rem;
     height: 1.2rem;
     margin-bottom: -0.2rem;
+}
+
+.img-full {
+    width: 100%;
 }
 
 .title {
@@ -45,8 +46,8 @@
     composes: section container is-fluid;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 10vh;
-    padding-bottom: 16vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
     background: url("../../img/TesBG-01.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -85,4 +86,13 @@
 .section-content-right{
     composes: column is-4;
     padding-top: 0;
+}
+
+@media only screen and (max-width:768px){
+    .section-container-bg {
+
+        background-repeat: repeat-y;
+
+    }
+
 }
