@@ -21,7 +21,7 @@ class Community extends React.Component {
 						</div>
 					</div>
 
-					<div styleName="section-content-row">
+					<div styleName="section-content-row-first">
 						<div styleName="section-content-left">
 							<div styleName="subheader">Join the Initiative </div>
 							<p>

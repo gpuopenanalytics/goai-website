@@ -93,6 +93,11 @@
     margin-top: 5vh;
 }
 
+.section-content-row-first{
+    composes: columns;
+    margin-top: 0;
+}
+
 .section-content-left{
     composes: column is-4 is-offset-2;
     padding-top: 0;

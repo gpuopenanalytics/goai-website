@@ -90,8 +90,7 @@ class Home extends React.Component {
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
 							<p>
-								Our vision is enabling analysts to easily open accelerated applications, 
-								ask data questions, run algorithms, build models, and visualize results seamlessly within GPUs.
+								Our mission is to build a platform that allows data scientist to explore data, train machine learning algorithms, and build applications while primarily staying on the GPU
 							</p>
 							<p>
 								<a href="#/about" styleName="link">
