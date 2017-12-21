@@ -25,6 +25,12 @@ import h2ologo from "../img/h2oai_logo.jpg";
 import mapdlogo from "../img/mapd_logo.jpg";
 
 class Home extends React.Component {
+	
+	/* so nav click always moves to top of page */
+	componentDidMount() {
+		window.scrollTo(0, 0);
+	}
+
 	render() {
 		return (
 			<article styleName="full-content">

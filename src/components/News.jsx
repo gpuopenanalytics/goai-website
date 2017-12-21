@@ -9,22 +9,50 @@ class News extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			newsLocation: "",
-			isLoaded: true,
-			newsData: [
-				{
-					title: "GOAI Site Updated",
-					date: "12.19.2017",
-					img: "",
-					description: "We have new style and content for our GOAI site",
-					link: "http://www.gpuopenanalytics.com"
-				},
-			]
+			newsLocation: "./data/news.json",
+			isLoaded: false,
+			newsData: []
 		};
 	}
 
+	/* so nav click always moves to top of page */
+	componentDidMount() {
+		window.scrollTo(0, 0);
+	}
+
 	getNews() {
-		// tbd w/ fetch
+		function status(response) {
+			if (response.status >= 200 && response.status < 300) {
+				return Promise.resolve(response);
+			} else {
+				return Promise.reject(new Error(response.statusText));
+			}
+		}
+
+		function json(response) {
+			return response.json();
+		}
+
+		const api = this.state.newsLocation;
+		fetch(api, { method: "get" })
+			.then(status)
+			.then(json)
+			.then((data) => {
+				console.log("Request succeeded with JSON response", data);
+				
+				this.setState({
+					newsData: data.news,
+					isLoaded: true
+				});
+
+			})
+			.catch((error) => {
+				console.log("Request failed", error);
+				this.setState({
+					newsData: [],
+					isLoaded: true
+				});
+			});
 	}
 
 	buildNews() {
@@ -35,9 +63,8 @@ class News extends React.Component {
 					image = placeHolder;
 				}
 				return (
-					<a href={d.link} key={"news" + i} styleName="news-card" title={d.link}>
+					<a href={d.link} key={"news" + i} styleName="news-card"title={d.link} >
 						<div styleName="news-image">
-							{" "}
 							<img src={image} styleName="news-img-src" />
 						</div>
 						<div styleName="news-title"> {d.title} </div>
@@ -48,7 +75,14 @@ class News extends React.Component {
 			});
 			return newsCards;
 		} else {
-			return (<span styleName="loading"> News Loading... </span>)
+			// fetch news
+			this.getNews();
+			return (
+				<div styleName="loading">
+					Loading News ... <br />
+					<div styleName="loading-box"> . </div>
+				</div>
+			);
 		}
 	}
 
@@ -67,12 +101,14 @@ class News extends React.Component {
 						<div styleName="section-content-left">
 							<div styleName="subheader">Latest News </div>
 							<p>
-								Keep up to date with events, blogs, and news around
-								GOAI. 
+								Keep up to date with events, blogs, and news
+								around GOAI.
 							</p>
 							<p>
 								<a href="https://twitter.com/hashtag/GOAI?src=hash"styleName="link">
-									<TwitterIcon styleName="link-icon" /> Want news faster? Look for our #GOAI hashtag on twitter.
+									<TwitterIcon styleName="link-icon" /> Want
+									news faster? Look for our #GOAI hashtag on
+									twitter.
 								</a>
 							</p>
 						</div>

@@ -1,25 +1,26 @@
-import React, { Component } from 'react'
-import { Switch, Route } from 'react-router-dom'
-import Home from '../components/Home'
-import About from '../components/About'
-import Projects from '../components/Projects'
-import Community from '../components/Community'
-import News from '../components/News'
-import NoMatch from '../components/NoMatch'
+import React, { Component } from "react";
+import { Switch, Route } from "react-router-dom";
+import Home from "../components/Home";
+import About from "../components/About";
+import Projects from "../components/Projects";
+import Community from "../components/Community";
+import News from "../components/News";
+import NoMatch from "../components/NoMatch";
 
 class Main extends React.Component {
+
 	render() {
 		return (
 			<Switch>
-				<Route exact path='/' component={Home} />
-				<Route path='/home' component={Home} />
-				<Route path='/about' component={About} />
-				<Route path='/projects' component={Projects} />
-				<Route path='/community' component={Community} />
-				<Route path='/news' component={News} />
-				<Route component={NoMatch}/>
+				<Route exact path="/" component={Home} />
+				<Route path="/home" component={Home} />
+				<Route path="/about" component={About} />
+				<Route path="/projects" component={Projects} />
+				<Route path="/community" component={Community} />
+				<Route path="/news" component={News} />
+				<Route component={NoMatch} />
 			</Switch>
-		)
+		);
 	}
 }
 

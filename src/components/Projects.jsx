@@ -10,6 +10,12 @@ import StackOverflowIcon from "mdi-react/stackOverflowIcon";
 
 
 class Projects extends React.Component {
+	
+	/* so nav click always moves to top of page */
+	componentDidMount() {
+		window.scrollTo(0, 0);
+	}
+
 	render() {
 		return (
 			<article styleName="full-content">

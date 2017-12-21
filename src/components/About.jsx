@@ -8,6 +8,12 @@ import SlackIcon from "mdi-react/slackIcon";
 import EmailIcon from "mdi-react/emailIcon";
 
 class About extends React.Component {
+
+	/* so nav click always moves to top of page */
+	componentDidMount() {
+		window.scrollTo(0, 0);
+	}
+
 	render() {
 		return (
 			<article styleName="full-content">
