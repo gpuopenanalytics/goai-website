@@ -97,6 +97,7 @@ class Community extends React.Component {
 						<div styleName="section-content-right">
 							<div styleName="subheader">Our Contributors</div>
 								<ul styleName="list-compact">
+									<li><a href="https://arrow.apache.org/" styleName="link"> Apache Arrow </a> </li>
 									<li>Siu Kwan Lam</li>
 									<li>Arno Candel</li>
 									<li>Minggang Yu </li>
@@ -177,7 +178,6 @@ class Community extends React.Component {
 						<div styleName="section-content-right">
 							<div styleName="subheader">Our Members</div>
 							<ul styleName="list-compact">
-								<li><a href="https://arrow.apache.org/" styleName="link"> Apache Arrow </a> </li>
 								<li><a href="https://anaconda.org/" styleName="link"> Anaconda </a> </li>
 								<li><a href="https://blazingdb.com/" styleName="link"> BlazindDB </a> </li>
 								<li><a href="https://gunrock.github.io/gunrock/doc/latest/index.html" styleName="link"> Gunrock of UC Davis </a> </li>
