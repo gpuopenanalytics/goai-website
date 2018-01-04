@@ -75,7 +75,7 @@ class Projects extends React.Component {
 								</a>
 							</p>
 							<p>
-								<a href="https://github.com/gpuopenanalytics/libgdf/wiki/Technical-Overview" styleName="link">
+								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" styleName="link">
 									<SlackIcon styleName="link-icon" /> Ask questions on our Slack team.
 								</a>
 							</p>
