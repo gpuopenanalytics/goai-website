@@ -33,17 +33,24 @@ class Community extends React.Component {
 							<p>
 								There are many ways for a project, group,
 								individual, or company to join the GPU Open Analytics
-								Initiative (GOAI). Below are details. 
+								Initiative (GOAI). Below are details.
+							</p>
+							<p>
+								If you have any questions, please reach out.
 							</p>
 							<p>
 								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" styleName="link"> 
-									<SlackIcon styleName="link-icon" /> Just have some questions? Connect with us on our Slack team.
+									<SlackIcon styleName="link-icon" /> Slack Team
+								</a>
+							</p>
+							<p>
+								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">
+									<GoogleGroupIcon styleName="link-icon" /> Google Group
 								</a>
 							</p>
 							<p>
 								<a href="mailto:admin@gpuopenanalytics.com?Subject=GOAI" title="email" styleName="link">
-									<EmailIcon styleName="link-icon" /> Or reach
-									us at admin@gpuopenanalytics.com.
+									<EmailIcon styleName="link-icon" /> admin@gpuopenanalytics.com 
 								</a>
 							</p>
 						</div>
@@ -60,8 +67,8 @@ class Community extends React.Component {
 								are currently using or planning to use a GOAI
 								project. For example, a database adding support for the GPU
 								Data Frame can be a GOAI adopter.  
-								Adopters should <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link"> announce their plans on the
-								public GOAI mailing list, </a> and we will add a link
+								Adopters should  <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">announce their plans on our
+								public Google Group, </a> and we will add a link
 								to their project on the GOAI website. 
 							</p>
 							<p>
@@ -86,7 +93,7 @@ class Community extends React.Component {
 								or individuals that would like to help develop projects.
 								Since the GOAI is based around open projects, 
 								clone a repository on our GitHub channel and make a pull request.
-								To help faciliate the process, let us know of your plans <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link"> on our public Google Group. </a>
+								To help faciliate the process, <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">let us know of your plans on our public Google Group. </a>
 							</p>
 							<p>
 							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">

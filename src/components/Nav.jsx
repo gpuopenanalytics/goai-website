@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import CSSModules from "react-css-modules";
 import styles from "./scss/nav";
 
+import GOAIlogoSmall from "../img/GOAI-logo-square-small.png";
+
 class Nav extends React.Component {
 	constructor(props) {
 		super(props);
@@ -38,7 +40,7 @@ class Nav extends React.Component {
 		return (
 			<nav styleName="navbar">
 				<div styleName="navbar-brand">
-					<a styleName="navbar-logo" href="http://gpuopenanalytics.com/">goai</a>
+					<a styleName="navbar-logo" href="http://gpuopenanalytics.com/"><img src={GOAIlogoSmall} styleName="navbar-logo-img"/> goai</a>
 
 					<button styleName={navbarBurger} onClick={this.handleClick}>
 						<span />

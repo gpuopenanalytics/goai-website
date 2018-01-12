@@ -1,11 +1,10 @@
 /* SCSS using css modules. Note, use composition pattern with only one module per element */
 
-@import '../../views/scss/composeColors';
 @import '../../views/scss/composeBulma';
 
 
 .navbar {
-	composes: navbar is-transparent grayColorDarkText;
+	composes: navbar is-transparent;
 	background-color: white;
 	font-family: "Montserrat", sans-serif;
 	font-variant: small-caps;
@@ -27,6 +26,10 @@
 	font-size: 1.6rem;
 }
 
+.navbar-logo-img{
+	width: 1.6rem;
+}
+
 .button-navbar-burger {
 	composes: button navbar-burger;
 }
@@ -36,7 +39,7 @@
 }
 
 .navbar-item {
-	color: rgba(52, 56, 53, 1) !important;
+	color: rgba(144, 144, 144, 1) !important;
 }
 
 .navbar-item:hover{

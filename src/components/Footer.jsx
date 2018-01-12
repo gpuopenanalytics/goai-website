@@ -21,6 +21,7 @@ class Footer extends React.Component {
 						<Link styleName="item" to="/community">community</Link>
 						<Link styleName="item" to="/projects">projects</Link>
 						<Link styleName="item" to="/news">news</Link>
+						<br/>
 						<a styleName="item" href="https://twitter.com/hashtag/GOAI?src=hash" title="twitter"><TwitterIcon styleName="icon" /></a>
 						<a styleName="item" href="https://stackoverflow.com/questions/tagged/goai" title="stack overflow"><StackOverflowIcon styleName="icon" /></a>
 						<a styleName="item" href="https://github.com/gpuopenanalytics" title="github"><GithubIcon styleName="icon" /></a>

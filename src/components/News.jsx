@@ -101,13 +101,13 @@ class News extends React.Component {
 						<div styleName="section-content-left">
 							<div styleName="subheader">Latest News </div>
 							<p>
-								Keep up to date with events, blogs, and news
+								Keep up to date with events, blog posts, and news
 								around GOAI.
 							</p>
 							<p>
 								<a href="https://twitter.com/hashtag/GOAI?src=hash"styleName="link">
 									<TwitterIcon styleName="link-icon" /> Want
-									news faster? Look for our #GOAI hashtag on
+									news faster? Look for our #GOAI on
 									twitter.
 								</a>
 							</p>

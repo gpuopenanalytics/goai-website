@@ -11,10 +11,11 @@ import SourceForkIcon from "mdi-react/sourceForkIcon";
 import SourceMergeIcon from "mdi-react/sourceMergeIcon";
 import SourcePullIcon from "mdi-react/sourcePullIcon";
 import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
-import QuoteOpenIcon from "mdi-react/formatQuoteOpenIcon"
-import QuoteCloseIcon from "mdi-react/formatQuoteCloseIcon"
+import QuoteOpenIcon from "mdi-react/formatQuoteOpenIcon";
+import QuoteCloseIcon from "mdi-react/formatQuoteCloseIcon";
 
-import GOAIlogo from "../img/GOAI-logo-v1.png"
+import GOAIlogo from "../img/GOAI-logo.png";
+
 
 import anacondalogo from "../img/anaconda_Logo.jpg";
 import arrowlogo from "../img/apacheArrow_logo.jpg";
