@@ -10,7 +10,7 @@ class Nav extends React.Component {
 		super(props);
 		this.state = {
 						isToggleOn: false,
-						navItems: ['home','about','projects','community', 'news'] // change nav items here
+						navItems: ['home','mission','projects','community', 'news'] // change nav items here
 					}
 		this.handleClick = this.handleClick.bind(this)
 	}

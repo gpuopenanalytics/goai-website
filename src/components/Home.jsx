@@ -3,10 +3,10 @@ import CSSModules from "react-css-modules";
 import styles from "./scss/home";
 
 // Icons from https://github.com/levrik/mdi-react
-import MatrixIcon from "mdi-react/matrixIcon";
 import GithubIcon from "mdi-react/githubCircleIcon";
 import SlackIcon from "mdi-react/slackIcon";
 import GoogleGroupIcon from "mdi-react/forumIcon";
+import MatrixIcon from "mdi-react/matrixIcon";
 import SourceForkIcon from "mdi-react/sourceForkIcon";
 import SourceMergeIcon from "mdi-react/sourceMergeIcon";
 import SourcePullIcon from "mdi-react/sourcePullIcon";
@@ -37,6 +37,7 @@ class Home extends React.Component {
 			<article styleName="full-content">
 				<section styleName="hero-body">
 					<div styleName="container">
+						
 						<div styleName="hero-logo-row">
 							<div styleName="hero-tile">
 								<img src={GOAIlogo} styleName="hero-logo" />
@@ -45,52 +46,39 @@ class Home extends React.Component {
 
 						<div styleName="hero-action-row">
 							<div styleName="action-col">
-								<a href="#/about">
-									<div styleName="action-tile">
-										<div styleName="action-header">
-											<MatrixIcon styleName="btn-icon-large" />
-										</div>
-										<div styleName="action-footer">
-											learn more about gpu analytics
-										</div>
-									</div>
-								</a>
-							</div>
-
-							<div styleName="action-col">
 								<a href="https://github.com/gpuopenanalytics/demo-docker">
 									<div styleName="action-tile">
 										<div styleName="action-header">
-											<SourcePullIcon styleName="btn-icon-large" />
+											<GithubIcon styleName="btn-icon-large" />
 										</div>
 										<div styleName="action-footer">
-											try out the open platform
+											jump right into our <br/> demo on github
 										</div>
 									</div>
 								</a>
 							</div>
 
 							<div styleName="action-col">
-								<a href="#/community">
+								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics">
 									<div styleName="action-tile">
 										<div styleName="action-header">
-											<SourceMergeIcon styleName="btn-icon-large" />
+											<GoogleGroupIcon styleName="btn-icon-large" />
 										</div>
 										<div styleName="action-footer">
-											collaborate with the inititive
+											reach out to the <br/> community on google group
 										</div>
 									</div>
 								</a>
 							</div>
-
 						</div>
+
 					</div>
 				</section>
 
 				<section styleName="section-container">
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
-							<h1 styleName="title"> About GOAI </h1>
+							<h1 styleName="title">Mission </h1>
 						</div>
 					</div>
 
@@ -119,44 +107,14 @@ class Home extends React.Component {
 				<section styleName="section-container-bg">
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
-							<h1 styleName="title"> GOAI Projects </h1>
-						</div>
-					</div>
-
-					<div styleName="section-content-row">
-						<div styleName="section-content-left">
-							<p styleName="large-quote">
-								<QuoteOpenIcon styleName="quote-icon" />
-									We are developing our platform to be open, accessible, and available for broad adoption.
-								<QuoteCloseIcon styleName="quote-icon" />
-							</p>
-						</div>
-						<div styleName="section-content-right">
-							<p>
-								Our projects are based around an open platform, which is the foundation of the GPU analytics ecosystem.
-								Members will help guide the development of projects, but anyone can be a contributor. And because its open, anyone can freely use the projects. 
-							</p>
-							<p>
-								<a href="#/projects" styleName="link">
-									<HexagonIcon styleName="link-icon" /> Learn more in our Projects
-									section.
-								</a>
-							</p>
-						</div>
-					</div>
-				</section>
-
-				<section styleName="section-container">
-					<div styleName="section-header-row">
-						<div styleName="section-header-left">
-							<h1 styleName="title"> GOAI Community </h1>
+							<h1 styleName="title">Community </h1>
 						</div>
 					</div>
 
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
 							<p>
-								We are just starting with the GOAI. Help make our community stronger by participating in the inititive.
+								We are just starting with GOAI. Help make our community stronger by participating in the inititive.
 							</p>
 							<p>
 								<a href="#/community" styleName="link">
@@ -173,7 +131,6 @@ class Home extends React.Component {
 							</p>
 						</div>
 					</div>
-
 
 					<div styleName="member-row">
 						<div styleName="member-row-item">
@@ -212,7 +169,39 @@ class Home extends React.Component {
 							</a>
 						</div>
 					</div>
+					
 				</section>
+
+				<section styleName="section-container">
+					<div styleName="section-header-row">
+						<div styleName="section-header-left">
+							<h1 styleName="title">Projects </h1>
+						</div>
+					</div>
+
+					<div styleName="section-content-row">
+						<div styleName="section-content-left">
+							<p styleName="large-quote">
+								<QuoteOpenIcon styleName="quote-icon" />
+									We are developing our platform to be open, accessible, and available for broad adoption.
+								<QuoteCloseIcon styleName="quote-icon" />
+							</p>
+						</div>
+						<div styleName="section-content-right">
+							<p>
+								Our projects are based around an open platform, which is the foundation of the GPU analytics ecosystem.
+								Members will help guide the development of projects, but anyone can be a contributor. And because its open, anyone can freely use the projects. 
+							</p>
+							<p>
+								<a href="#/projects" styleName="link">
+									<HexagonIcon styleName="link-icon" /> Learn more in our Projects
+									section.
+								</a>
+							</p>
+						</div>
+					</div>
+				</section>
+
 			</article>
 		);
 	}

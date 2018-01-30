@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "../components/Home";
-import About from "../components/About";
+import Mission from "../components/Mission";
 import Projects from "../components/Projects";
 import Community from "../components/Community";
 import News from "../components/News";
@@ -14,7 +14,7 @@ class Main extends React.Component {
 			<Switch>
 				<Route exact path="/" component={Home} />
 				<Route path="/home" component={Home} />
-				<Route path="/about" component={About} />
+				<Route path="/mission" component={Mission} />
 				<Route path="/projects" component={Projects} />
 				<Route path="/community" component={Community} />
 				<Route path="/news" component={News} />

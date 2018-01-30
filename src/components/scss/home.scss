@@ -42,7 +42,6 @@
     background-color: rgb(243, 243, 243);;
 }
 
-
 .hero-logo-row {
     composes: columns is-centered;
 }
@@ -115,6 +114,7 @@
 
 .large-quote {
     font-size: 2rem;
+    margin-top: -0.4rem;
 }
 
 .small-quote {
@@ -125,15 +125,16 @@
     composes: section container is-fluid;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 15vh;
-    padding-bottom: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .section-container-bg {
     composes: section container is-fluid;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 15vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     background: url("../../img/TesBG-01.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -177,7 +178,7 @@
 
 .member-row {
     composes: columns is-centered is-mobile is-multiline;
-    margin-top: 8vh;
+    margin-top: 1vh;
 }
 
 .member-row-item {

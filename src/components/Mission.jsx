@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import CSSModules from "react-css-modules";
-import styles from "./scss/about";
+import styles from "./scss/mission";
 
 import GOAIgroup from "../img/GOAI-group-com.png";
 import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
 import SlackIcon from "mdi-react/slackIcon";
 import EmailIcon from "mdi-react/emailIcon";
 
-class About extends React.Component {
+class Mission extends React.Component {
 
 	/* so nav click always moves to top of page */
 	componentDidMount() {
@@ -20,12 +20,12 @@ class About extends React.Component {
 				<section styleName="section-container-bg">
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
-							<h1 styleName="title">About GOAI</h1>
+							<h1 styleName="title">GOAI Mission</h1>
 						</div>
 					</div>
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
-							<div styleName="subheader">Mission </div>
+							<div styleName="subheader">Mission</div>
 							<p>
 								The GPU Open Analytics Initiative (GOAI) seeks
 								to foster and develop open collaboration between
@@ -81,4 +81,4 @@ class About extends React.Component {
 	}
 }
 
-export default CSSModules(About, styles);
+export default CSSModules(Mission, styles);

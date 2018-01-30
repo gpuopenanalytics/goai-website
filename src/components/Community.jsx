@@ -23,13 +23,13 @@ class Community extends React.Component {
 					
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
-							<h1 styleName="title">The GOAI Community</h1>
+							<h1 styleName="title">GOAI Community</h1>
 						</div>
 					</div>
 
 					<div styleName="section-content-row-first">
 						<div styleName="section-content-left">
-							<div styleName="subheader">Join the Initiative </div>
+							<div styleName="subheader">Adopt, Contribute, Join!</div>
 							<p>
 								There are many ways for a project, group,
 								individual, or company to join the GPU Open Analytics
@@ -78,9 +78,10 @@ class Community extends React.Component {
 							</p>
 						</div>
 						<div styleName="section-content-right">
-							<div styleName="subheader">Our Adopters</div>
+
+							<div styleName="subheader"> </div>
 								<ul styleName="list-compact">
-									<li>Adopters pending...</li>
+									<li></li>
 								</ul>
 						</div>
 					</div>
@@ -169,11 +170,12 @@ class Community extends React.Component {
 								</li>
 							</ul>
 							<p>
+								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">Apply 
+								for memebership on our public Google Group. </a>
 								Existing members will vote on the admission of
 								new members based on the above criteria. Note
 								that adopters do not need to satisfy the above
-								requirements. <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link"> Apply 
-								for memebership on our public Google Group. </a>
+								requirements.
 							</p>
 							<p>
 								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">

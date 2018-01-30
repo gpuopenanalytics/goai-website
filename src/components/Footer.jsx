@@ -17,7 +17,7 @@ class Footer extends React.Component {
 				<div styleName="container">
 					<div styleName="content">
 						<Link styleName="item" to="/">goai</Link>
-						<Link styleName="item" to="/about">about</Link>
+						<Link styleName="item" to="/mission">mission</Link>
 						<Link styleName="item" to="/community">community</Link>
 						<Link styleName="item" to="/projects">projects</Link>
 						<Link styleName="item" to="/news">news</Link>

@@ -90,7 +90,7 @@ class Projects extends React.Component {
 								GDF Graph
 							</div>
 							<p>
-								In planning stage. Check back later. 
+								In the planning stages.
 							</p>
 						</div>
 					</div>
