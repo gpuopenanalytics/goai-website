@@ -45,7 +45,7 @@ class Community extends React.Component {
 							</p>
 							<p>
 								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">
-									<GoogleGroupIcon styleName="link-icon" /> Google Group
+									<GoogleGroupIcon styleName="link-icon" /> Google Groups
 								</a>
 							</p>
 							<p>
@@ -68,7 +68,7 @@ class Community extends React.Component {
 								project. For example, a database adding support for the GPU
 								Data Frame can be a GOAI adopter.  
 								Adopters should  <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">announce their plans on our
-								public Google Group, </a> and we will add a link
+								public Google Groups, </a> and we will add a link
 								to their project on the GOAI website. 
 							</p>
 							<p>
@@ -94,7 +94,7 @@ class Community extends React.Component {
 								or individuals that would like to help develop projects.
 								Since the GOAI is based around open projects, 
 								clone a repository on our GitHub channel and make a pull request.
-								To help faciliate the process, <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">let us know of your plans on our public Google Group. </a>
+								To help faciliate the process, <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">let us know of your plans on our public Google Groups. </a>
 							</p>
 							<p>
 							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">
@@ -171,7 +171,7 @@ class Community extends React.Component {
 							</ul>
 							<p>
 								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">Apply 
-								for memebership on our public Google Group. </a>
+								for memebership on our public Google Groups. </a>
 								Existing members will vote on the admission of
 								new members based on the above criteria. Note
 								that adopters do not need to satisfy the above

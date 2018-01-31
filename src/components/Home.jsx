@@ -44,32 +44,25 @@ class Home extends React.Component {
 							</div>
 						</div>
 
-						<div styleName="hero-action-row">
-							<div styleName="action-col">
-								<a href="https://github.com/gpuopenanalytics/demo-docker">
-									<div styleName="action-tile">
-										<div styleName="action-header">
-											<GithubIcon styleName="btn-icon-large" />
-										</div>
-										<div styleName="action-footer">
-											jump right into our <br/> demo on github
-										</div>
-									</div>
-								</a>
-							</div>
+						<div styleName="action-row">
+							<a href="https://github.com/gpuopenanalytics/demo-docker" styleName="action-col">
+								<div styleName="action-header">
+									<GithubIcon styleName="btn-icon-large" />
+								</div>
+								<div styleName="action-footer">
+									jump right into our <br/> coding demo on github
+								</div>
+							</a>
 
-							<div styleName="action-col">
-								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics">
-									<div styleName="action-tile">
-										<div styleName="action-header">
-											<GoogleGroupIcon styleName="btn-icon-large" />
-										</div>
-										<div styleName="action-footer">
-											reach out to the <br/> community on google group
-										</div>
-									</div>
-								</a>
-							</div>
+							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="action-col" >
+								<div styleName="action-header">
+									<GoogleGroupIcon styleName="btn-icon-large" />
+								</div>
+								<div styleName="action-footer">
+									reach out to the community <br/> on google groups
+								</div>
+							</a>
+
 						</div>
 
 					</div>
