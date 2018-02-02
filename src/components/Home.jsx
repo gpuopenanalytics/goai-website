@@ -45,7 +45,7 @@ class Home extends React.Component {
 						</div>
 
 						<div styleName="action-row">
-							<a href="https://github.com/gpuopenanalytics/demo-docker" styleName="action-col">
+							<a href="https://github.com/gpuopenanalytics/demo-docker" styleName="action-col" target="_blank">
 								<div styleName="action-header">
 									<GithubIcon styleName="btn-icon-large" />
 								</div>
@@ -54,7 +54,7 @@ class Home extends React.Component {
 								</div>
 							</a>
 
-							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="action-col" >
+							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="action-col" target="_blank">
 								<div styleName="action-header">
 									<GoogleGroupIcon styleName="btn-icon-large" />
 								</div>
@@ -81,8 +81,8 @@ class Home extends React.Component {
 								Our mission is to build a platform that allows data scientist to explore data, train machine learning algorithms, and build applications while primarily staying on the GPU
 							</p>
 							<p>
-								<a href="#/about" styleName="link">
-									<HexagonIcon styleName="link-icon" /> Learn more in our About
+								<a href="#/mission" styleName="link">
+									<HexagonIcon styleName="link-icon" /> Learn more in our Mission
 									section.
 								</a>
 							</p>
@@ -127,37 +127,37 @@ class Home extends React.Component {
 
 					<div styleName="member-row">
 						<div styleName="member-row-item">
-							<a href="https://arrow.apache.org/">
+							<a href="https://arrow.apache.org/" target="_blank">
 								<img src={arrowlogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
-							<a href="https://anaconda.org/">
+							<a href="https://anaconda.org/" target="_blank">
 								<img src={anacondalogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
-							<a href="https://blazingdb.com/">
+							<a href="https://blazingdb.com/" target="_blank">
 								<img src={blazingdblogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
-							<a href="https://gunrock.github.io/gunrock/doc/latest/index.html">
+							<a href="https://gunrock.github.io/gunrock/doc/latest/index.html" target="_blank">
 								<img src={gunrocklogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
-							<a href="https://www.graphistry.com/">
+							<a href="https://www.graphistry.com/" target="_blank">
 								<img src={graphistrylogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
-							<a href="https://www.mapd.com/">
+							<a href="https://www.mapd.com/" target="_blank">
 								<img src={mapdlogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
-							<a href="https://www.h2o.ai/">
+							<a href="https://www.h2o.ai/" target="_blank">
 								<img src={h2ologo} styleName="member-logo" />
 							</a>
 						</div>
@@ -174,13 +174,6 @@ class Home extends React.Component {
 
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
-							<p styleName="large-quote">
-								<QuoteOpenIcon styleName="quote-icon" />
-									We are developing our platform to be open, accessible, and available for broad adoption.
-								<QuoteCloseIcon styleName="quote-icon" />
-							</p>
-						</div>
-						<div styleName="section-content-right">
 							<p>
 								Our projects are based around an open platform, which is the foundation of the GPU analytics ecosystem.
 								Members will help guide the development of projects, but anyone can be a contributor. And because its open, anyone can freely use the projects. 
@@ -190,6 +183,12 @@ class Home extends React.Component {
 									<HexagonIcon styleName="link-icon" /> Learn more in our Projects
 									section.
 								</a>
+							</p>						</div>
+						<div styleName="section-content-right">
+							<p styleName="large-quote">
+								<QuoteOpenIcon styleName="quote-icon" />
+									We are developing our platform to be open, accessible, and available for broad adoption.
+								<QuoteCloseIcon styleName="quote-icon" />
 							</p>
 						</div>
 					</div>

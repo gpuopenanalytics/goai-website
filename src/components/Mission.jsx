@@ -51,20 +51,20 @@ class Mission extends React.Component {
 								needing to move data off the GPU.
 							</p>
 							<p>
-								<a href="#/community" styleName="link">
+								<a href="#/community" styleName="link" target="_blank">
 									<HexagonIcon styleName="link-icon" /> Interested in becoming a member or joining
 									in other ways? Learn more at our Community
 									page.
 								</a>
 							</p>
 							<p>
-								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" styleName="link">
+								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" styleName="link" target="_blank">
 									<SlackIcon styleName="link-icon" /> Have
 									some questions? Ask us on our Slack team.
 								</a>
 							</p>
 							<p>
-								<a href="mailto:admin@gpuopenanalytics.com?Subject=GOAI" title="email" styleName="link">
+								<a href="mailto:admin@gpuopenanalytics.com?Subject=GOAI" title="email" styleName="link" target="_blank">
 									<EmailIcon styleName="link-icon" /> Or reach
 									us at admin@gpuopenanalytics.com.
 								</a>

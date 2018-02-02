@@ -39,17 +39,17 @@ class Community extends React.Component {
 								If you have any questions, please reach out.
 							</p>
 							<p>
-								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" styleName="link"> 
+								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" styleName="link" target="_blank"> 
 									<SlackIcon styleName="link-icon" /> Slack Team
 								</a>
 							</p>
 							<p>
-								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">
+								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">
 									<GoogleGroupIcon styleName="link-icon" /> Google Groups
 								</a>
 							</p>
 							<p>
-								<a href="mailto:admin@gpuopenanalytics.com?Subject=GOAI" title="email" styleName="link">
+								<a href="mailto:admin@gpuopenanalytics.com?Subject=GOAI" title="email" styleName="link" target="_blank">
 									<EmailIcon styleName="link-icon" /> admin@gpuopenanalytics.com 
 								</a>
 							</p>
@@ -67,12 +67,12 @@ class Community extends React.Component {
 								are currently using or planning to use a GOAI
 								project. For example, a database adding support for the GPU
 								Data Frame can be a GOAI adopter.  
-								Adopters should  <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">announce their plans on our
+								Adopters should  <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">announce their plans on our
 								public Google Groups, </a> and we will add a link
 								to their project on the GOAI website. 
 							</p>
 							<p>
-								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">
+								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">
 									<GoogleGroupIcon styleName="link-icon" /> Let us know you're using GOAI projects.
 								</a>
 							</p>
@@ -94,10 +94,10 @@ class Community extends React.Component {
 								or individuals that would like to help develop projects.
 								Since the GOAI is based around open projects, 
 								clone a repository on our GitHub channel and make a pull request.
-								To help faciliate the process, <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">let us know of your plans on our public Google Groups. </a>
+								To help faciliate the process, <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">let us know of your plans on our public Google Groups. </a>
 							</p>
 							<p>
-							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">
+							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">
 									<GoogleGroupIcon styleName="link-icon" /> Let us know that you want to contribute.
 								</a>
 							</p>
@@ -170,7 +170,7 @@ class Community extends React.Component {
 								</li>
 							</ul>
 							<p>
-								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">Apply 
+								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">Apply 
 								for memebership on our public Google Groups. </a>
 								Existing members will vote on the admission of
 								new members based on the above criteria. Note
@@ -178,7 +178,7 @@ class Community extends React.Component {
 								requirements.
 							</p>
 							<p>
-								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link">
+								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">
 									<GoogleGroupIcon styleName="link-icon" /> Announce your plans to join GOAI.
 								</a>
 							</p>
@@ -187,12 +187,12 @@ class Community extends React.Component {
 						<div styleName="section-content-right">
 							<div styleName="subheader">Our Members</div>
 							<ul styleName="list-compact">
-								<li><a href="https://anaconda.org/" styleName="link"> Anaconda </a> </li>
-								<li><a href="https://blazingdb.com/" styleName="link"> BlazindDB </a> </li>
-								<li><a href="https://gunrock.github.io/gunrock/doc/latest/index.html" styleName="link"> Gunrock of UC Davis </a> </li>
-								<li><a href="https://www.graphistry.com/" styleName="link"> Graphistry </a> </li>
-								<li><a href="https://www.mapd.com/" styleName="link"> MapD </a> </li>
-								<li><a href="https://www.h2o.ai/" styleName="link"> H20.ai </a> </li>
+								<li><a href="https://anaconda.org/" styleName="link" target="_blank"> Anaconda </a> </li>
+								<li><a href="https://blazingdb.com/" styleName="link" target="_blank"> BlazindDB </a> </li>
+								<li><a href="https://gunrock.github.io/gunrock/doc/latest/index.html" styleName="link" target="_blank"> Gunrock of UC Davis </a> </li>
+								<li><a href="https://www.graphistry.com/" styleName="link" target="_blank"> Graphistry </a> </li>
+								<li><a href="https://www.mapd.com/" styleName="link" target="_blank"> MapD </a> </li>
+								<li><a href="https://www.h2o.ai/" styleName="link" target="_blank"> H20.ai </a> </li>
 							</ul>
 						</div>
 					</div>

@@ -61,7 +61,7 @@ class Projects extends React.Component {
 							</p>
 							<p>
 								At the moment, the GDF format is a subset of the 
-								<a href="https://arrow.apache.org/docs/memory_layout.html" styleName="link"> Apache Arrow specification</a>.
+								<a href="https://arrow.apache.org/docs/memory_layout.html" styleName="link" target="_blank"> Apache Arrow specification</a>.
 								The precise subset has not been fully
 								defined yet, but currently includes numerical
 								columns, and will soon include
@@ -70,17 +70,17 @@ class Projects extends React.Component {
 								systems).
 							</p>
 							<p>
-								<a href="https://github.com/gpuopenanalytics/libgdf/wiki/Technical-Overview" styleName="link">
+								<a href="https://github.com/gpuopenanalytics/libgdf/wiki/Technical-Overview" styleName="link" target="_blank">
 									<GithubIcon styleName="link-icon" /> Learn more at the Github Technical Overview.
 								</a>
 							</p>
 							<p>
-								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" styleName="link">
+								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" styleName="link" target="_blank">
 									<SlackIcon styleName="link-icon" /> Ask questions on our Slack team.
 								</a>
 							</p>
 							<p>
-								<a href="https://stackoverflow.com/questions/tagged/gdf" styleName="link">
+								<a href="https://stackoverflow.com/questions/tagged/gdf" styleName="link" target="_blank">
 									<StackOverflowIcon styleName="link-icon" /> Or resort to StackOverflow.
 								</a>
 							</p>

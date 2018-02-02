@@ -105,7 +105,7 @@ class News extends React.Component {
 								around GOAI.
 							</p>
 							<p>
-								<a href="https://twitter.com/hashtag/GOAI?src=hash"styleName="link">
+								<a href="https://twitter.com/hashtag/GOAI?src=hash"styleName="link" target="_blank">
 									<TwitterIcon styleName="link-icon" /> Want
 									news faster? Look for #GOAI on
 									twitter.
