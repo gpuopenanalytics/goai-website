@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import CSSModules from "react-css-modules";
 import styles from "./scss/nav";
 
-import GOAIlogoSmall from "../img/GOAI-logo-square-small.png";
+import GOAIlogoSmall from "../img/GOAI-square.png";
 
 class Nav extends React.Component {
 	constructor(props) {
