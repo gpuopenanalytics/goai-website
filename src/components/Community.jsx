@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import CSSModules from "react-css-modules";
 import styles from "./scss/community";
 
-import GOAigroup from "../img/GOAi-group-com.png";
+import GOAigroup from "../img/GOAI-group-com.png";
 import GithubIcon from "mdi-react/githubCircleIcon";
 import EmailIcon from "mdi-react/emailIcon";
 import SlackIcon from "mdi-react/slackIcon";
