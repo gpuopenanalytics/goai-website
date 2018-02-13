@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import CSSModules from "react-css-modules";
 import styles from "./scss/community";
 
-import GOAIgroup from "../img/GOAI-group-com.png";
+import GOAigroup from "../img/GOAi-group-com.png";
 import GithubIcon from "mdi-react/githubCircleIcon";
 import EmailIcon from "mdi-react/emailIcon";
 import SlackIcon from "mdi-react/slackIcon";
@@ -23,7 +23,7 @@ class Community extends React.Component {
 					
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
-							<h1 styleName="title">GOAI Community</h1>
+							<h1 styleName="title">GOAi Community</h1>
 						</div>
 					</div>
 
@@ -33,7 +33,7 @@ class Community extends React.Component {
 							<p>
 								There are many ways for a project, group,
 								individual, or company to join the GPU Open Analytics
-								Initiative (GOAI). Below are details.
+								Initiative (GOAi). Below are details.
 							</p>
 							<p>
 								If you have any questions, please reach out.
@@ -49,13 +49,13 @@ class Community extends React.Component {
 								</a>
 							</p>
 							<p>
-								<a href="mailto:admin@gpuopenanalytics.com?Subject=GOAI" title="email" styleName="link" target="_blank">
+								<a href="mailto:admin@gpuopenanalytics.com?Subject=GOAi" title="email" styleName="link" target="_blank">
 									<EmailIcon styleName="link-icon" /> admin@gpuopenanalytics.com 
 								</a>
 							</p>
 						</div>
 						<div styleName="section-content-right">
-							<img src={GOAIgroup} styleName="img-med" />
+							<img src={GOAigroup} styleName="img-med" />
 						</div>
 					</div>
 
@@ -64,16 +64,16 @@ class Community extends React.Component {
 							<div styleName="subheader">Become an Adopter </div>
 							<p>
 								Adopters are projects, products or groups that
-								are currently using or planning to use a GOAI
+								are currently using or planning to use a GOAi
 								project. For example, a database adding support for the GPU
-								Data Frame can be a GOAI adopter.  
+								Data Frame can be a GOAi adopter.  
 								Adopters should  <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">announce their plans on our
 								public Google Groups, </a> and we will add a link
-								to their project on the GOAI website. 
+								to their project on the GOAi website. 
 							</p>
 							<p>
 								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">
-									<GoogleGroupIcon styleName="link-icon" /> Let us know you're using GOAI projects.
+									<GoogleGroupIcon styleName="link-icon" /> Let us know you're using GOAi projects.
 								</a>
 							</p>
 						</div>
@@ -92,7 +92,7 @@ class Community extends React.Component {
 							<p>
 								Contributors are any projects, groups,
 								or individuals that would like to help develop projects.
-								Since the GOAI is based around open projects, 
+								Since the GOAi is based around open projects, 
 								clone a repository on our GitHub channel and make a pull request.
 								To help faciliate the process, <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">let us know of your plans on our public Google Groups. </a>
 							</p>
@@ -123,14 +123,14 @@ class Community extends React.Component {
 							<div styleName="subheader">Become a Member </div>
 							<p>
 								A member is responsible for stewardship of the
-								GOAI organization, including decision-making
-								about expanding GOAI to future projects,
+								GOAi organization, including decision-making
+								about expanding GOAi to future projects,
 								planning for events and outreach, and generally
-								promoting the GOAI mission. Members will meet
-								periodically to discuss and vote on GOAI
+								promoting the GOAi mission. Members will meet
+								periodically to discuss and vote on GOAi
 								management issues. However, technical decisions
 								are handled by the open source developer
-								communities around individual GOAI projects and
+								communities around individual GOAi projects and
 								<strong> membership is not a requirement for technical
 								contributions</strong>. An organization can request
 								membership from the existing members. Members
@@ -154,16 +154,16 @@ class Community extends React.Component {
 										community.
 									</strong>
 									Members should have a constructive and
-									friendly attitude toward others in the GOAI
+									friendly attitude toward others in the GOAi
 									community and be willing to mentor newer
 									contributors and users.
 								</li>
 								<li>
 									<strong>
-										Collaborate with other GOAI members. 
+										Collaborate with other GOAi members. 
 									</strong>
-									Although GOAI members may be business
-									competitors, within the context of GOAI
+									Although GOAi members may be business
+									competitors, within the context of GOAi
 									meetings and projects, members are expected
 									to collaborate in good faith with other
 									members.
@@ -179,7 +179,7 @@ class Community extends React.Component {
 							</p>
 							<p>
 								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">
-									<GoogleGroupIcon styleName="link-icon" /> Announce your plans to join GOAI.
+									<GoogleGroupIcon styleName="link-icon" /> Announce your plans to join GOAi.
 								</a>
 							</p>
 
@@ -189,7 +189,7 @@ class Community extends React.Component {
 							<ul styleName="list-compact">
 								<li><a href="https://anaconda.org/" styleName="link" target="_blank"> Anaconda </a> </li>
 								<li><a href="https://blazingdb.com/" styleName="link" target="_blank"> BlazindDB </a> </li>
-								<li><a href="https://gunrock.github.io/gunrock/doc/latest/index.html" styleName="link" target="_blank"> Gunrock of UC Davis </a> </li>
+								<li><a href="https://gunrock.github.io/" styleName="link" target="_blank"> Gunrock of UC Davis </a> </li>
 								<li><a href="https://www.graphistry.com/" styleName="link" target="_blank"> Graphistry </a> </li>
 								<li><a href="https://www.mapd.com/" styleName="link" target="_blank"> MapD </a> </li>
 								<li><a href="https://www.h2o.ai/" styleName="link" target="_blank"> H20.ai </a> </li>

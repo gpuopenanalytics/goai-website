@@ -94,7 +94,7 @@ class News extends React.Component {
 				<section styleName="section-container-bg">
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
-							<h1 styleName="title">GOAI News</h1>
+							<h1 styleName="title">GOAi News</h1>
 						</div>
 					</div>
 					<div styleName="section-content-row">
@@ -102,12 +102,12 @@ class News extends React.Component {
 							<div styleName="subheader">Latest News </div>
 							<p>
 								Keep up to date with events, blog posts, and news
-								around GOAI.
+								around GOAi.
 							</p>
 							<p>
-								<a href="https://twitter.com/hashtag/GOAI?src=hash"styleName="link" target="_blank">
+								<a href="https://twitter.com/hashtag/GOAi?src=hash"styleName="link" target="_blank">
 									<TwitterIcon styleName="link-icon" /> Want
-									news faster? Look for #GOAI on
+									news faster? Look for #GOAi on
 									twitter.
 								</a>
 							</p>

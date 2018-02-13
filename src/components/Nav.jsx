@@ -40,7 +40,7 @@ class Nav extends React.Component {
 		return (
 			<nav styleName="navbar">
 				<div styleName="navbar-brand">
-					<a styleName="navbar-logo" href="http://gpuopenanalytics.com/"><img src={GOAIlogoSmall} styleName="navbar-logo-img"/> goai</a>
+					<a styleName="navbar-logo" href="http://gpuopenanalytics.com/"><img src={GOAIlogoSmall} styleName="navbar-logo-img"/> goai </a>
 
 					<button styleName={navbarBurger} onClick={this.handleClick}>
 						<span />

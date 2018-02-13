@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import CSSModules from "react-css-modules";
 import styles from "./scss/projects";
 
-import GOAIgdf from "../img/GOAI-group-gdf.png";
+import GOAigdf from "../img/GOAi-group-gdf.png";
 import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
 import GithubIcon from "mdi-react/githubCircleIcon";
 import SlackIcon from "mdi-react/slackIcon";
@@ -22,18 +22,19 @@ class Projects extends React.Component {
 				<section styleName="section-container-bg">
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
-							<h1 styleName="title"> GOAI Projects </h1>
+							<h1 styleName="title"> GOAi Projects </h1>
 						</div>
 					</div>
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
 							<div styleName="subheader">Projects Overview</div>
-							<p>Our projects are based around an open platform, which is the foundation of the GPU analytics ecosystem.
+							<p>
+								Our projects are based around an open platform, which is the foundation of the GPU analytics ecosystem.
 								Members will help guide the development of projects, but anyone can be a contributor. And because its open, 
 								anyone can freely use the projects. 
 							</p>
 							<p>
-								Currently, GOAI is supporting the GPU Data Frame
+								Currently, GOAi is supporting the GPU Data Frame
 								project (GDF), which will enable tabular data to be
 								directly exchanged between libraries and
 								applications on the GPU. We expect other
@@ -57,17 +58,11 @@ class Projects extends React.Component {
 								between processes.
 							</p>
 							<p>
-								<img src={GOAIgdf} styleName="img-full" />
+								<img src={GOAigdf} styleName="img-full" />
 							</p>
 							<p>
-								At the moment, the GDF format is a subset of the 
-								<a href="https://arrow.apache.org/docs/memory_layout.html" styleName="link" target="_blank"> Apache Arrow specification</a>.
-								The precise subset has not been fully
-								defined yet, but currently includes numerical
-								columns, and will soon include
-								dictionary-encoded columns (sometimes called
-								"categorical" columns in other data frame
-								systems).
+								The GDF uses the <a href="https://arrow.apache.org/docs/memory_layout.html" styleName="link" target="_blank">Apache Arrow</a> columnar 
+								format to represent data on the GPU. Some Arrow features are not yet supported.
 							</p>
 							<p>
 								<a href="https://github.com/gpuopenanalytics/libgdf/wiki/Technical-Overview" styleName="link" target="_blank">

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import CSSModules from "react-css-modules";
 import styles from "./scss/mission";
 
-import GOAIgroup from "../img/GOAI-group-com.png";
+import GOAigroup from "../img/GOAi-group-com.png";
 import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
 import SlackIcon from "mdi-react/slackIcon";
 import EmailIcon from "mdi-react/emailIcon";
@@ -20,14 +20,14 @@ class Mission extends React.Component {
 				<section styleName="section-container-bg">
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
-							<h1 styleName="title">GOAI Mission</h1>
+							<h1 styleName="title">GOAi Mission</h1>
 						</div>
 					</div>
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
 							<div styleName="subheader">Mission</div>
 							<p>
-								The GPU Open Analytics Initiative (GOAI) seeks
+								The GPU Open Analytics Initiative (GOAi) seeks
 								to foster and develop open collaboration between
 								GPU analytics projects and products to enable
 								data scientists to efficiently combine the best
@@ -44,7 +44,7 @@ class Mission extends React.Component {
 								is GPU-accelerated, but it becomes less and less
 								efficient as more applications and libraries in
 								the pipeline gain GPU-accelerated
-								implementations. The GOAI members recognized
+								implementations. The GOAi members recognized
 								this difficulty, and are collaborating to create
 								an open spec and set of tools for data exchange
 								between libraries and applications without
@@ -64,7 +64,7 @@ class Mission extends React.Component {
 								</a>
 							</p>
 							<p>
-								<a href="mailto:admin@gpuopenanalytics.com?Subject=GOAI" title="email" styleName="link" target="_blank">
+								<a href="mailto:admin@gpuopenanalytics.com?Subject=GOAi" title="email" styleName="link" target="_blank">
 									<EmailIcon styleName="link-icon" /> Or reach
 									us at admin@gpuopenanalytics.com.
 								</a>
@@ -72,7 +72,7 @@ class Mission extends React.Component {
 						</div>
 
 						<div styleName="section-content-right">
-							<img src={GOAIgroup} styleName="img-full" />
+							<img src={GOAigroup} styleName="img-full" />
 						</div>
 					</div>
 				</section>

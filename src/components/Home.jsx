@@ -14,7 +14,7 @@ import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
 import QuoteOpenIcon from "mdi-react/formatQuoteOpenIcon";
 import QuoteCloseIcon from "mdi-react/formatQuoteCloseIcon";
 
-import GOAIlogo from "../img/GOAI-logo.png";
+import GOAilogo from "../img/GOAi-logo.png";
 
 
 import anacondalogo from "../img/anaconda_Logo.jpg";
@@ -40,7 +40,7 @@ class Home extends React.Component {
 						
 						<div styleName="hero-logo-row">
 							<div styleName="hero-tile">
-								<img src={GOAIlogo} styleName="hero-logo" />
+								<img src={GOAilogo} styleName="hero-logo" />
 							</div>
 						</div>
 
@@ -50,7 +50,7 @@ class Home extends React.Component {
 									<GithubIcon styleName="btn-icon-large" />
 								</div>
 								<div styleName="action-footer">
-									jump right into our <br/> coding demo on github
+									jump right into our <br/> notebook on github
 								</div>
 							</a>
 
@@ -107,7 +107,7 @@ class Home extends React.Component {
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
 							<p>
-								We are just starting with GOAI. Help make our community stronger by participating in the inititive.
+								We are just starting with GOAi. Help make our community stronger by participating in the inititive.
 							</p>
 							<p>
 								<a href="#/community" styleName="link">
@@ -142,7 +142,7 @@ class Home extends React.Component {
 							</a>
 						</div>
 						<div styleName="member-row-item">
-							<a href="https://gunrock.github.io/gunrock/doc/latest/index.html" target="_blank">
+							<a href="https://gunrock.github.io/" target="_blank">
 								<img src={gunrocklogo} styleName="member-logo" />
 							</a>
 						</div>
