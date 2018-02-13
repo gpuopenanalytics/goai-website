@@ -16,13 +16,13 @@ class Footer extends React.Component {
 			<footer styleName="foot">
 				<div styleName="container">
 					<div styleName="content">
-						<Link styleName="item" to="/">goai</Link>
-						<Link styleName="item" to="/mission">mission</Link>
-						<Link styleName="item" to="/community">community</Link>
-						<Link styleName="item" to="/projects">projects</Link>
-						<Link styleName="item" to="/news">news</Link>
+						<Link styleName="item" to="/">GOAi</Link>
+						<Link styleName="item" to="/MISSION">MISSION</Link>
+						<Link styleName="item" to="/COMMUNITY">COMMUNITY</Link>
+						<Link styleName="item" to="/PROJECTS">PROJECTS</Link>
+						<Link styleName="item" to="/NEWS">NEWS</Link>
 						<br/>
-						<a styleName="item" href="https://twitter.com/hashtag/GOAI?src=hash" title="twitter" target="_blank"><TwitterIcon styleName="icon" /></a>
+						<a styleName="item" href="https://twitter.com/gpuoai" title="twitter" target="_blank"><TwitterIcon styleName="icon" /></a>
 						<a styleName="item" href="https://stackoverflow.com/questions/tagged/goai" title="stack overflow" target="_blank"><StackOverflowIcon styleName="icon" /></a>
 						<a styleName="item" href="https://github.com/gpuopenanalytics" title="github" target="_blank"><GithubIcon styleName="icon" /></a>
 						<a styleName="item" href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" title="slack" target="_blank"><SlackIcon styleName="icon"/></a>

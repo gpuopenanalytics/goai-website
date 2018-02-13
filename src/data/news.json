@@ -1,12 +1,40 @@
 {
-  "updated": "02-01-18",
+  "updated": "02-16-18",
   "news": [
     { 
-      "title": "GOAI Site Updated",
-      "date": "02.01.2018",
+      "title": "GOAi Site Updated",
+      "date": "02.16.2018",
       "img": "",
-      "description": "We have new style and content for our GOAI site",
+      "description": "GWe have brand new style and content for our GOAi site.",
       "link": "http://www.gpuopenanalytics.com"
+    },
+    { 
+      "title": "GOAi: Open GPU-Accelerated Data Analytics",
+      "date": "06.12.2017",
+      "img": "https://devblogs.nvidia.com/wp-content/uploads/2017/06/fig2-1024x567.png",
+      "description": "Click to find out more at Nvidia",
+      "link": "https://devblogs.nvidia.com/goai-open-gpu-accelerated-data-analytics/"
+    },
+    { 
+      "title": "End-to-end Computation on the GPU with the GPU Data Frame (GDF)",
+      "date": "05.30.2017",
+      "img": "https://www.mapd.com/assets/static/images/mapd_logo_black.png",
+      "description": "Click to find out more about mapD",
+      "link": "https://www.mapd.com/blog/2017/05/30/end-to-end-on-the-gpu-with-the-gpu-data-frame-gdf/"
+    },
+    { 
+      "title": "H2O announces GPU Open Analytics Initiative with MapD & Continuum",
+      "date": "05.18.2017",
+      "img": "https://www.h2o.ai/wp-content/uploads/2017/11/Asset-4.png",
+      "description": "Click to find out more about H20.ai",
+      "link": "https://blog.h2o.ai/2017/05/h2o-announces-gpu-open-analytics-initiative-with-mapd-continuum/"
+    },
+    { 
+      "title": "Data Science And Deep Learning Application Leaders Form GPU Open Analytics Initiative",
+      "date": "05.18.2017",
+      "img": "https://www.anaconda.com/wp-content/themes/anaconda/images/logo-dark.png",
+      "description": "Click to find out more about Anaconda",
+      "link": "https://www.anaconda.com/blog/news/data-science-and-deep-learning-application-leaders-form-gpu-open-analytics-initiative/"
     }
   ]
 }

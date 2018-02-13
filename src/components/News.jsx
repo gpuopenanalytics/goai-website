@@ -63,7 +63,7 @@ class News extends React.Component {
 					image = placeHolder;
 				}
 				return (
-					<a href={d.link} key={"news" + i} styleName="news-card"title={d.link} >
+					<a href={d.link} key={"news" + i} styleName="news-card" title={d.link} target="_blank">
 						<div styleName="news-image">
 							<img src={image} styleName="news-img-src" />
 						</div>
@@ -105,7 +105,7 @@ class News extends React.Component {
 								around GOAi.
 							</p>
 							<p>
-								<a href="https://twitter.com/hashtag/GOAi?src=hash"styleName="link" target="_blank">
+								<a href="https://twitter.com/gpuoai"styleName="link" target="_blank">
 									<TwitterIcon styleName="link-icon" /> Want
 									news faster? Look for #GOAi on
 									twitter.

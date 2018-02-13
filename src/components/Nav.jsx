@@ -10,7 +10,7 @@ class Nav extends React.Component {
 		super(props);
 		this.state = {
 						isToggleOn: false,
-						navItems: ['home','mission','projects','community', 'news'] // change nav items here
+						navItems: ['HOME','MISSION','PROJECTS','COMMUNITY', 'NEWS'] // change nav items here
 					}
 		this.handleClick = this.handleClick.bind(this)
 	}
@@ -40,7 +40,7 @@ class Nav extends React.Component {
 		return (
 			<nav styleName="navbar">
 				<div styleName="navbar-brand">
-					<a styleName="navbar-logo" href="http://gpuopenanalytics.com/"><img src={GOAIlogoSmall} styleName="navbar-logo-img"/> goai </a>
+					<a styleName="navbar-logo" href="http://gpuopenanalytics.com/"><img src={GOAIlogoSmall} styleName="navbar-logo-img"/> GOAi </a>
 
 					<button styleName={navbarBurger} onClick={this.handleClick}>
 						<span />
