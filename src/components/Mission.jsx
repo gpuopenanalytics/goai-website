@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import CSSModules from "react-css-modules";
 import styles from "./scss/mission";
 
-import GOAigroup from "../img/GOAi-group-com.png";
+import GOAigroup from "../img/GOAI-group-com.png";
 import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
 import SlackIcon from "mdi-react/slackIcon";
 import EmailIcon from "mdi-react/emailIcon";

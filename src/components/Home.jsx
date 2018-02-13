@@ -14,7 +14,7 @@ import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
 import QuoteOpenIcon from "mdi-react/formatQuoteOpenIcon";
 import QuoteCloseIcon from "mdi-react/formatQuoteCloseIcon";
 
-import GOAilogo from "../img/GOAi-logo.png";
+import GOAilogo from "../img/GOAI-logo.png";
 
 
 import anacondalogo from "../img/anaconda_Logo.jpg";
