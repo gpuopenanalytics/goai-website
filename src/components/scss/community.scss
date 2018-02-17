@@ -41,10 +41,6 @@
     width: 100%;
 }
 
-.img-med {
-    width: 75%;
-    margin-left: 11.5%;
-}
 
 .title {
     composes: titleColor;
@@ -87,7 +83,7 @@
 }
 
 .section-header-right{
-    composes: column is-3 is-offset-1;
+    composes: column is-3;
     padding-top: 0;
     margin-bottom: -2rem;
 }
@@ -107,10 +103,17 @@
     padding-top: 0;
 }
 
+
 .section-content-right{
+    composes: column is-3;
+    padding-top: 0;
+}
+
+.section-content-right-space{
     composes: column is-3 is-offset-1;
     padding-top: 0;
 }
+
 
 
 @media only screen and (max-width:768px){

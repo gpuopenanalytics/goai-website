@@ -7,7 +7,7 @@ import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
 import GithubIcon from "mdi-react/githubCircleIcon";
 import SlackIcon from "mdi-react/slackIcon";
 import StackOverflowIcon from "mdi-react/stackOverflowIcon";
-
+import NotebookIcon from "mdi-react/bookOpenPageVariantIcon";
 
 class Projects extends React.Component {
 	
@@ -63,6 +63,11 @@ class Projects extends React.Component {
 							<p>
 								The GDF uses the <a href="https://arrow.apache.org/docs/memory_layout.html" styleName="link" target="_blank">Apache Arrow</a> columnar 
 								format to represent data on the GPU. Some Arrow features are not yet supported.
+							</p>
+							<p>
+								<a href="https://github.com/gpuopenanalytics/demo-docker/tree/master/notebook-demo-docker/demo/notebooks" styleName="link" target="_blank">
+									<NotebookIcon styleName="link-icon" /> Try our iPython Notebook Demos.
+								</a>
 							</p>
 							<p>
 								<a href="https://github.com/gpuopenanalytics/libgdf/wiki/Technical-Overview" styleName="link" target="_blank">

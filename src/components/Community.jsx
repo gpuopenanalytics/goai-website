@@ -77,7 +77,7 @@ class Community extends React.Component {
 								</a>
 							</p>
 						</div>
-						<div styleName="section-content-right">
+						<div styleName="section-content-right-space">
 
 							<div styleName="subheader"> </div>
 								<ul styleName="list-compact">
@@ -102,7 +102,7 @@ class Community extends React.Component {
 								</a>
 							</p>
 						</div>
-						<div styleName="section-content-right">
+						<div styleName="section-content-right-space">
 							<div styleName="subheader">Our Contributors</div>
 								<ul styleName="list-compact">
 									<li><a href="https://arrow.apache.org/" styleName="link"> Apache Arrow </a> </li>
@@ -184,7 +184,7 @@ class Community extends React.Component {
 							</p>
 
 						</div>
-						<div styleName="section-content-right">
+						<div styleName="section-content-right-space">
 							<div styleName="subheader">Our Members</div>
 							<ul styleName="list-compact">
 								<li><a href="https://anaconda.org/" styleName="link" target="_blank"> Anaconda </a> </li>

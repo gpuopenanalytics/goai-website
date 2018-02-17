@@ -50,7 +50,7 @@ class Home extends React.Component {
 									<GithubIcon styleName="btn-icon-large" />
 								</div>
 								<div styleName="action-footer">
-									jump right into our <br/> notebook on github
+									go right to our demo <br/> notebooks on github
 								</div>
 							</a>
 
