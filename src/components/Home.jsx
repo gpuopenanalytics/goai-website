@@ -107,7 +107,7 @@ class Home extends React.Component {
 					<div styleName="section-content-row">
 						<div styleName="section-content-left">
 							<p>
-								We are just starting with GOAi. Help make our community stronger by participating in the inititive.
+								We are just starting with GoAi. Help make our community stronger by participating in the inititive.
 							</p>
 							<p>
 								<a href="#/community" styleName="link">

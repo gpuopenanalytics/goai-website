@@ -33,7 +33,7 @@ class Community extends React.Component {
 							<p>
 								There are many ways for a project, group,
 								individual, or company to join the GPU Open Analytics
-								Initiative (GOAi). Below are details.
+								Initiative (GoAi). Below are details.
 							</p>
 							<p>
 								If you have any questions, please reach out.
@@ -49,13 +49,13 @@ class Community extends React.Component {
 								</a>
 							</p>
 							<p>
-								<a href="mailto:admin@gpuopenanalytics.com?Subject=GOAi" title="email" styleName="link" target="_blank">
+								<a href="mailto:admin@gpuopenanalytics.com?Subject=GoAi" title="email" styleName="link" target="_blank">
 									<EmailIcon styleName="link-icon" /> admin@gpuopenanalytics.com 
 								</a>
 							</p>
 						</div>
 						<div styleName="section-content-right">
-							<img src={GOAigroup} styleName="img-med" />
+							<img src={GOAigroup} styleName="img-full" />
 						</div>
 					</div>
 
@@ -64,16 +64,16 @@ class Community extends React.Component {
 							<div styleName="subheader">Become an Adopter </div>
 							<p>
 								Adopters are projects, products or groups that
-								are currently using or planning to use a GOAi
+								are currently using or planning to use a GoAi
 								project. For example, a database adding support for the GPU
-								Data Frame can be a GOAi adopter.  
+								Data Frame can be a GoAi adopter.  
 								Adopters should  <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">announce their plans on our
 								public Google Groups, </a> and we will add a link
-								to their project on the GOAi website. 
+								to their project on the GoAi website. 
 							</p>
 							<p>
 								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">
-									<GoogleGroupIcon styleName="link-icon" /> Let us know you're using GOAi projects.
+									<GoogleGroupIcon styleName="link-icon" /> Let us know you're using GoAi projects.
 								</a>
 							</p>
 						</div>
@@ -92,7 +92,7 @@ class Community extends React.Component {
 							<p>
 								Contributors are any projects, groups,
 								or individuals that would like to help develop projects.
-								Since the GOAi is based around open projects, 
+								Since the GoAi is based around open projects, 
 								clone a repository on our GitHub channel and make a pull request.
 								To help faciliate the process, <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">let us know of your plans on our public Google Groups. </a>
 							</p>
@@ -123,14 +123,14 @@ class Community extends React.Component {
 							<div styleName="subheader">Become a Member </div>
 							<p>
 								A member is responsible for stewardship of the
-								GOAi organization, including decision-making
-								about expanding GOAi to future projects,
+								GoAi organization, including decision-making
+								about expanding GoAi to future projects,
 								planning for events and outreach, and generally
-								promoting the GOAi mission. Members will meet
-								periodically to discuss and vote on GOAi
+								promoting the GoAi mission. Members will meet
+								periodically to discuss and vote on GoAi
 								management issues. However, technical decisions
 								are handled by the open source developer
-								communities around individual GOAi projects and
+								communities around individual GoAi projects and
 								<strong> membership is not a requirement for technical
 								contributions</strong>. An organization can request
 								membership from the existing members. Members
@@ -154,16 +154,16 @@ class Community extends React.Component {
 										community.
 									</strong>
 									Members should have a constructive and
-									friendly attitude toward others in the GOAi
+									friendly attitude toward others in the GoAi
 									community and be willing to mentor newer
 									contributors and users.
 								</li>
 								<li>
 									<strong>
-										Collaborate with other GOAi members. 
+										Collaborate with other GoAi members. 
 									</strong>
-									Although GOAi members may be business
-									competitors, within the context of GOAi
+									Although GoAi members may be business
+									competitors, within the context of GoAi
 									meetings and projects, members are expected
 									to collaborate in good faith with other
 									members.
@@ -179,7 +179,7 @@ class Community extends React.Component {
 							</p>
 							<p>
 								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">
-									<GoogleGroupIcon styleName="link-icon" /> Announce your plans to join GOAi.
+									<GoogleGroupIcon styleName="link-icon" /> Announce your plans to join GoAi.
 								</a>
 							</p>
 

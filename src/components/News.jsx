@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import CSSModules from "react-css-modules";
+import FuzzySearch from "../components/FuzzySearch";
 import styles from "./scss/news";
 
-import placeHolder from "../img/poly-place.jpg";
 import TwitterIcon from "mdi-react/twitterIcon";
 
 class News extends React.Component {
@@ -11,14 +11,21 @@ class News extends React.Component {
 		this.state = {
 			newsLocation: "./data/news.json",
 			isLoaded: false,
-			newsData: []
+			newsData: [],
+			search: ""
 		};
+
+		this.handleChange = this.handleChange.bind(this);
 	}
 
 	/* so nav click always moves to top of page */
 	componentDidMount() {
 		window.scrollTo(0, 0);
 	}
+
+	handleChange(event) {
+    	this.setState({search: event.target.value});
+  	}
 
 	getNews() {
 		function status(response) {
@@ -45,6 +52,7 @@ class News extends React.Component {
 					isLoaded: true
 				});
 
+
 			})
 			.catch((error) => {
 				console.log("Request failed", error);
@@ -57,23 +65,7 @@ class News extends React.Component {
 
 	buildNews() {
 		if (this.state.isLoaded) {
-			const newsCards = this.state.newsData.map((d, i) => {
-				let image = d.img;
-				if (d.img === "") {
-					image = placeHolder;
-				}
-				return (
-					<a href={d.link} key={"news" + i} styleName="news-card" title={d.link} target="_blank">
-						<div styleName="news-image">
-							<img src={image} styleName="news-img-src" />
-						</div>
-						<div styleName="news-title"> {d.title} </div>
-						<div styleName="news-desc"> {d.description} </div>
-						<div styleName="news-date"> {d.date} </div>
-					</a>
-				);
-			});
-			return newsCards;
+			return (<FuzzySearch searchTerm={this.state.search} listData={this.state.newsData} />)
 		} else {
 			// fetch news
 			this.getNews();
@@ -87,6 +79,7 @@ class News extends React.Component {
 	}
 
 	render() {
+
 		const newsList = this.buildNews();
 
 		return (
@@ -98,21 +91,32 @@ class News extends React.Component {
 						</div>
 					</div>
 					<div styleName="section-content-row">
+						
 						<div styleName="section-content-left">
 							<div styleName="subheader">Latest News </div>
 							<p>
 								Keep up to date with events, blog posts, and news
-								around GOAi.
+								around GoAi.
 							</p>
 							<p>
 								<a href="https://twitter.com/gpuoai"styleName="link" target="_blank">
 									<TwitterIcon styleName="link-icon" /> Want
-									news faster? Look for #GOAi on
+									news faster? Look for #GoAi on
 									twitter.
 								</a>
 							</p>
 						</div>
-						<div styleName="section-content-right">{newsList}</div>
+						
+						<div styleName="section-content-right">
+							<div styleName="subheader">Find News</div>
+							<div styleName="field">
+							  <div styleName="control">
+							    <input styleName="input" value={this.state.search} onChange={this.handleChange} placeholder="enter search term" />
+							  </div>
+							</div>
+							{newsList}
+						</div>
+
 					</div>
 				</section>
 			</article>

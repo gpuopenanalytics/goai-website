@@ -37,6 +37,10 @@
     margin-bottom: -0.2rem;
 }
 
+.img-full {
+    width: 100%;
+}
+
 .img-med {
     width: 75%;
     margin-left: 11.5%;
@@ -83,7 +87,7 @@
 }
 
 .section-header-right{
-    composes: column is-3;
+    composes: column is-3 is-offset-1;
     padding-top: 0;
     margin-bottom: -2rem;
 }
@@ -104,7 +108,7 @@
 }
 
 .section-content-right{
-    composes: column is-3;
+    composes: column is-3 is-offset-1;
     padding-top: 0;
 }
 

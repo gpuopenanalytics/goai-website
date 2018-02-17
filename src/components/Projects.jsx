@@ -34,7 +34,7 @@ class Projects extends React.Component {
 								anyone can freely use the projects. 
 							</p>
 							<p>
-								Currently, GOAi is supporting the GPU Data Frame
+								Currently, GoAi is supporting the GPU Data Frame
 								project (GDF), which will enable tabular data to be
 								directly exchanged between libraries and
 								applications on the GPU. We expect other

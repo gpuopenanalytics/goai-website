@@ -27,7 +27,7 @@ class Mission extends React.Component {
 						<div styleName="section-content-left">
 							<div styleName="subheader">Mission</div>
 							<p>
-								The GPU Open Analytics Initiative (GOAi) seeks
+								The GPU Open Analytics Initiative (GoAi) seeks
 								to foster and develop open collaboration between
 								GPU analytics projects and products to enable
 								data scientists to efficiently combine the best
@@ -44,7 +44,7 @@ class Mission extends React.Component {
 								is GPU-accelerated, but it becomes less and less
 								efficient as more applications and libraries in
 								the pipeline gain GPU-accelerated
-								implementations. The GOAi members recognized
+								implementations. The GoAi members recognized
 								this difficulty, and are collaborating to create
 								an open spec and set of tools for data exchange
 								between libraries and applications without
@@ -64,7 +64,7 @@ class Mission extends React.Component {
 								</a>
 							</p>
 							<p>
-								<a href="mailto:admin@gpuopenanalytics.com?Subject=GOAi" title="email" styleName="link" target="_blank">
+								<a href="mailto:admin@gpuopenanalytics.com?Subject=GoAi" title="email" styleName="link" target="_blank">
 									<EmailIcon styleName="link-icon" /> Or reach
 									us at admin@gpuopenanalytics.com.
 								</a>
@@ -72,7 +72,7 @@ class Mission extends React.Component {
 						</div>
 
 						<div styleName="section-content-right">
-							<img src={GOAigroup} styleName="img-full" />
+							<img src={GOAigroup} styleName="img-med" />
 						</div>
 					</div>
 				</section>

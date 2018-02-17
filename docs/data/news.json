@@ -1,39 +1,145 @@
 {
   "updated": "02-16-18",
   "news": [
-    { 
+    {
       "title": "GOAi Site Updated",
       "date": "02.16.2018",
-      "img": "",
-      "description": "GWe have brand new style and content for our GOAi site.",
+      "img": "../img/GOAI-square.png",
+      "tags": "We have brand new style and content for our GOAi site.",
       "link": "http://www.gpuopenanalytics.com"
     },
-    { 
+    {
+      "title": "Hello, MapD Connector",
+      "date": "02.14.2018",
+      "img": "",
+      "tags": "Observable, MapD, Mike Bostock",
+      "link": "https://beta.observablehq.com/@mbostock/hello-mapd-connector"
+    },
+    {
+      "title": "Dask Release 0.17.0",
+      "date": "02.12.2018",
+      "img": "https://user-images.githubusercontent.com/306380/35012109-86df75fa-fad6-11e7-9fa8-a43a697a4a17.png",
+      "tags": "Dask, Anaconda",
+      "link": "http://matthewrocklin.com/blog/work/2018/02/12/dask-0.17.0"
+    },
+    {
+      "title": "The Case for Numba in Community Code",
+      "date": "02.02.2018",
+      "img": "../img/anaconda_Logo.jpg",
+      "tags": "Anaconda, Numba",
+      "link": "https://www.anaconda.com/blog/developer-blog/the-case-for-numba-in-community-code/"
+    },
+    {
+      "title": "Introducing MapD Immerse Enterprise as Part of the MapD 3.4 Release",
+      "date": "01.16.2018",
+      "img": "../img/mapd_logo.jpg",
+      "tags": "MapD, Immerse",
+      "link": "https://www.mapd.com/blog/introducing-mapd-immerse-enterprise-as-part-of-the-mapd-3-4-release/"
+    },
+    {
+      "title": "Supercharging Visualization with Apache Arrow",
+      "date": "01.01.2018",
+      "img": "https://www.kdnuggets.com/wp-content/uploads/apache-arrow-after-612.jpg",
+      "tags": "Apache Arrow, Graphistry",
+      "link": "https://www.kdnuggets.com/2018/01/supercharging-visualization-apache-arrow.html"
+    },
+    {
+      "title": "H2O4GPU Hands-On Lab (Video) + Updates",
+      "date": "12.23.2017",
+      "img": "https://i0.wp.com/blog.h2o.ai/wp-content/uploads/2017/12/Screen-Shot-2017-12-22-at-8.20.50-PM-1.png?resize=768%2C370",
+      "tags": "H20.ai, H20World",
+      "link": "https://blog.h2o.ai/2017/12/h2o4gpu-hands-lab-video-updates/"
+    },
+    {
+      "title": "Exploring data with pandas and MapD using Apache Arrow",
+      "date": "12.14.2017",
+      "img": "../img/mapd_logo.jpg",
+      "tags": "MapD, Apache Arrow, pyData",
+      "link": "https://www.mapd.com/blog/mapd-pandas-arrow"
+    },
+    {
+      "title": "Dask + Numba for Efficient In-Memory Model Scoring",
+      "date": "11.28.2017",
+      "img": "https://cdn-images-1.medium.com/max/1000/1*y1IPwDujhQkhDsq_7yAndw.jpeg",
+      "tags": "dask, numba",
+      "link": "https://medium.com/capital-one-developers/dask-numba-for-efficient-in-memory-model-scoring-dfc9b68ba6ce"
+    },
+
+    {
+      "title": "Serious about big data visualization? Consider using MapD.",
+      "date": "11.21.2017",
+      "img": "https://cdn-images-1.medium.com/max/2000/1*kZ_E0CLQjkeV2UWI6nM9iA.png",
+      "tags": "MapD, visualization, big data",
+      "link": "https://hackernoon.com/serious-about-big-data-visualization-consider-using-mapd-7a5d0ddd77d7"
+    },
+    {
+      "title": "Volkswagen Uses MapD to Visualize and Interrogate Black Box AI Models",
+      "date": "11.17.2017",
+      "img": "http://www.gputechconf.com/sites/all/themes/bootstrap_gtc/images/gtc-2015-logo.png",
+      "tags": "VW, MapD, automotive, GTC",
+      "link": "https://www.youtube.com/watch?v=-mBg-lFz5fQ"
+    },
+    {
+      "title": "Getting Started with GPU Computing in Anaconda",
+      "date": "10.30.2017",
+      "img": "../img/anaconda_Logo.jpg",
+      "tags": "Anaconda",
+      "link": "https://www.anaconda.com/blog/developer-blog/getting-started-with-gpu-computing-in-anaconda/"
+    },
+    {
+      "title": "Seven Things You Might Not Know about Numba",
+      "date": "10.02.2017 ",
+      "img": "https://devblogs.nvidia.com/wp-content/uploads/2017/10/numba_blue_icon_rgb-300x300.png",
+      "tags": "Nvidia, Numba",
+      "link": "https://devblogs.nvidia.com/seven-things-numba/"
+    },
+    {
+      "title": "H2O.ai Releases H2O4GPU, the Fastest Collection of GPU Algorithms on the Market, to Expedite Machine Learning in Python",
+      "date": "08.26.2017",
+      "img": "../img/h2oai_logo.jpg",
+      "tags": "H20.ai, H204GPU",
+      "link": "https://blog.h2o.ai/2017/09/h2o-ai-releases-h2o4gpu-the-fastest-collection-of-gpu-algorithms-on-the-market-to-expedite-machine-learning-in-python/"
+    },
+    {
+      "title": "Exploring 13 Seasons (7,588,492 plays) of The NBA in Real Time",
+      "date": " 08.20.2017",
+      "img": "https://www.mapd.com/contentassets/3e86e31610374dd7a910281b8951d701/2--nba_scatter-copy.gif",
+      "tags": "MapD, NBA",
+      "link": "https://www.mapd.com/blog/exploring-13-seasons-of-the-nba"
+    },
+    {
+      "title": "Open Sourcing Anaconda Accelerate",
+      "date": "07.27.2017",
+      "img": "../img/anaconda_Logo.jpg",
+      "tags": "Anaconda, Accelerate, Numba",
+      "link": "https://www.anaconda.com/blog/developer-blog/open-sourcing-anaconda-accelerate/"
+    },
+    {
       "title": "GOAi: Open GPU-Accelerated Data Analytics",
       "date": "06.12.2017",
-      "img": "https://devblogs.nvidia.com/wp-content/uploads/2017/06/fig2-1024x567.png",
-      "description": "Click to find out more at Nvidia",
+      "img": "https://www.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/images/NVIDIA-Logo.svg",
+      "tags": "nvidia, GDF",
       "link": "https://devblogs.nvidia.com/goai-open-gpu-accelerated-data-analytics/"
     },
-    { 
+    {
       "title": "End-to-end Computation on the GPU with the GPU Data Frame (GDF)",
       "date": "05.30.2017",
-      "img": "https://www.mapd.com/assets/static/images/mapd_logo_black.png",
-      "description": "Click to find out more about mapD",
+      "img": "../img/mapd_logo.jpg",
+      "tags": "mapD, GDF",
       "link": "https://www.mapd.com/blog/2017/05/30/end-to-end-on-the-gpu-with-the-gpu-data-frame-gdf/"
     },
-    { 
+    {
       "title": "H2O announces GPU Open Analytics Initiative with MapD & Continuum",
       "date": "05.18.2017",
       "img": "https://www.h2o.ai/wp-content/uploads/2017/11/Asset-4.png",
-      "description": "Click to find out more about H20.ai",
+      "tags": "h20.ai, h20, GDF",
       "link": "https://blog.h2o.ai/2017/05/h2o-announces-gpu-open-analytics-initiative-with-mapd-continuum/"
     },
-    { 
-      "title": "Data Science And Deep Learning Application Leaders Form GPU Open Analytics Initiative",
+    {
+      "title":"Data Science And Deep Learning Application Leaders Form GPU Open Analytics Initiative",
       "date": "05.18.2017",
-      "img": "https://www.anaconda.com/wp-content/themes/anaconda/images/logo-dark.png",
-      "description": "Click to find out more about Anaconda",
+      "img": "../img/anaconda_Logo.jpg",
+      "tags": "Anaconda, GDF",
       "link": "https://www.anaconda.com/blog/news/data-science-and-deep-learning-application-leaders-form-gpu-open-analytics-initiative/"
     }
   ]
