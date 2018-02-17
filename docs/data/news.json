@@ -4,7 +4,7 @@
     {
       "title": "GOAi Site Updated",
       "date": "02.16.2018",
-      "img": "../img/GOAI-square.png",
+      "img": "./img/GOAI-square.png",
       "tags": "We have brand new style and content for our GOAi site.",
       "link": "http://www.gpuopenanalytics.com"
     },
@@ -25,14 +25,14 @@
     {
       "title": "The Case for Numba in Community Code",
       "date": "02.02.2018",
-      "img": "../img/anaconda_Logo.jpg",
+      "img": "./img/anaconda_Logo.jpg",
       "tags": "Anaconda, Numba",
       "link": "https://www.anaconda.com/blog/developer-blog/the-case-for-numba-in-community-code/"
     },
     {
       "title": "Introducing MapD Immerse Enterprise as Part of the MapD 3.4 Release",
       "date": "01.16.2018",
-      "img": "../img/mapd_logo.jpg",
+      "img": "./img/mapd_logo.jpg",
       "tags": "MapD, Immerse",
       "link": "https://www.mapd.com/blog/introducing-mapd-immerse-enterprise-as-part-of-the-mapd-3-4-release/"
     },
@@ -53,7 +53,7 @@
     {
       "title": "Exploring data with pandas and MapD using Apache Arrow",
       "date": "12.14.2017",
-      "img": "../img/mapd_logo.jpg",
+      "img": "./img/mapd_logo.jpg",
       "tags": "MapD, Apache Arrow, pyData",
       "link": "https://www.mapd.com/blog/mapd-pandas-arrow"
     },
@@ -75,7 +75,7 @@
     {
       "title": "Volkswagen Uses MapD to Visualize and Interrogate Black Box AI Models",
       "date": "11.17.2017",
-      "img": "http://www.gputechconf.com/sites/all/themes/bootstrap_gtc/images/gtc-2015-logo.png",
+      "img": "https://www.gputechconf.com/sites/all/themes/bootstrap_gtc/images/gtc-2015-logo.png",
       "tags": "VW, MapD, automotive, GTC",
       "link": "https://www.youtube.com/watch?v=-mBg-lFz5fQ"
     },
