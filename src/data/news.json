@@ -82,7 +82,7 @@
     {
       "title": "Getting Started with GPU Computing in Anaconda",
       "date": "10.30.2017",
-      "img": "../img/anaconda_Logo.jpg",
+      "img": "./img/anaconda_Logo.jpg",
       "tags": "Anaconda",
       "link": "https://www.anaconda.com/blog/developer-blog/getting-started-with-gpu-computing-in-anaconda/"
     },
@@ -96,13 +96,13 @@
     {
       "title": "H2O.ai Releases H2O4GPU, the Fastest Collection of GPU Algorithms on the Market, to Expedite Machine Learning in Python",
       "date": "08.26.2017",
-      "img": "../img/h2oai_logo.jpg",
+      "img": "./img/h2oai_logo.jpg",
       "tags": "H20.ai, H204GPU",
       "link": "https://blog.h2o.ai/2017/09/h2o-ai-releases-h2o4gpu-the-fastest-collection-of-gpu-algorithms-on-the-market-to-expedite-machine-learning-in-python/"
     },
     {
       "title": "Exploring 13 Seasons (7,588,492 plays) of The NBA in Real Time",
-      "date": " 08.20.2017",
+      "date": "08.20.2017",
       "img": "https://www.mapd.com/contentassets/3e86e31610374dd7a910281b8951d701/2--nba_scatter-copy.gif",
       "tags": "MapD, NBA",
       "link": "https://www.mapd.com/blog/exploring-13-seasons-of-the-nba"
@@ -110,7 +110,7 @@
     {
       "title": "Open Sourcing Anaconda Accelerate",
       "date": "07.27.2017",
-      "img": "../img/anaconda_Logo.jpg",
+      "img": "./img/anaconda_Logo.jpg",
       "tags": "Anaconda, Accelerate, Numba",
       "link": "https://www.anaconda.com/blog/developer-blog/open-sourcing-anaconda-accelerate/"
     },
@@ -124,7 +124,7 @@
     {
       "title": "End-to-end Computation on the GPU with the GPU Data Frame (GDF)",
       "date": "05.30.2017",
-      "img": "../img/mapd_logo.jpg",
+      "img": "./img/mapd_logo.jpg",
       "tags": "mapD, GDF",
       "link": "https://www.mapd.com/blog/2017/05/30/end-to-end-on-the-gpu-with-the-gpu-data-frame-gdf/"
     },
@@ -138,7 +138,7 @@
     {
       "title":"Data Science And Deep Learning Application Leaders Form GPU Open Analytics Initiative",
       "date": "05.18.2017",
-      "img": "../img/anaconda_Logo.jpg",
+      "img": "./img/anaconda_Logo.jpg",
       "tags": "Anaconda, GDF",
       "link": "https://www.anaconda.com/blog/news/data-science-and-deep-learning-application-leaders-form-gpu-open-analytics-initiative/"
     }
