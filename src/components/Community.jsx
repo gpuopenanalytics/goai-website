@@ -106,6 +106,7 @@ class Community extends React.Component {
 							<div styleName="subheader">Our Contributors</div>
 								<ul styleName="list-compact">
 									<li><a href="https://arrow.apache.org/" styleName="link"> Apache Arrow </a> </li>
+									<li><a href="http://www.simantex.com/" styleName="link"> Simantex </a> </li>
 									<li>Siu Kwan Lam</li>
 									<li>Arno Candel</li>
 									<li>Minggang Yu </li>

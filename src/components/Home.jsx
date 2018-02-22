@@ -24,6 +24,7 @@ import graphistrylogo from "../img/graphistry_logo.jpg";
 import gunrocklogo from "../img/gunrock_logo.jpg";
 import h2ologo from "../img/h2oai_logo.jpg";
 import mapdlogo from "../img/mapd_logo.jpg";
+import simantexlogo from "../img/simantex_logo.jpg";
 
 class Home extends React.Component {
 	
@@ -127,11 +128,6 @@ class Home extends React.Component {
 
 					<div styleName="member-row">
 						<div styleName="member-row-item">
-							<a href="https://arrow.apache.org/" target="_blank">
-								<img src={arrowlogo} styleName="member-logo" />
-							</a>
-						</div>
-						<div styleName="member-row-item">
 							<a href="https://anaconda.org/" target="_blank">
 								<img src={anacondalogo} styleName="member-logo" />
 							</a>
@@ -159,6 +155,18 @@ class Home extends React.Component {
 						<div styleName="member-row-item">
 							<a href="https://www.h2o.ai/" target="_blank">
 								<img src={h2ologo} styleName="member-logo" />
+							</a>
+						</div>
+					</div>
+					<div styleName="member-row">
+						<div styleName="member-row-item">
+							<a href="https://arrow.apache.org/" target="_blank">
+								<img src={arrowlogo} styleName="member-logo" />
+							</a>
+						</div>
+						<div styleName="member-row-item">
+							<a href="http://www.simantex.com/" target="_blank">
+								<img src={simantexlogo} styleName="member-logo" />
 							</a>
 						</div>
 					</div>
