@@ -1,15 +1,20 @@
 import React, { Component } from "react";
 import CSSModules from "react-css-modules";
+import Papa from "papaparse"
 import FuzzySearch from "../components/FuzzySearch";
 import styles from "./scss/news";
 
 import TwitterIcon from "mdi-react/twitterIcon";
 
 class News extends React.Component {
+
+	// NOTE: update news from google drive and make sure publish to csv is set
+	// https://docs.google.com/spreadsheets/d/1JCwXaeQGi_TjSgxSgfXZhr-rz4ZwpcKdYFCbdH2ntU0/edit#gid=0
+
 	constructor(props) {
 		super(props);
 		this.state = {
-			newsLocation: "./data/news.json",
+			newsLocation: "https://docs.google.com/spreadsheets/d/e/2PACX-1vREYtIIJ4K-cu-qfNu_9pZUpmcLJ46evvpaowRkz-ut4y2qzVAzXgwtQWGiRFf0lpZ-ZekQ366Q6nqw/pub?output=csv", 
 			isLoaded: false,
 			newsData: [],
 			search: ""
@@ -28,39 +33,30 @@ class News extends React.Component {
   	}
 
 	getNews() {
-		function status(response) {
-			if (response.status >= 200 && response.status < 300) {
-				return Promise.resolve(response);
-			} else {
-				return Promise.reject(new Error(response.statusText));
-			}
-		}
 
-		function json(response) {
-			return response.json();
-		}
+		const that = this;
 
-		const api = this.state.newsLocation;
-		fetch(api, { method: "get" })
-			.then(status)
-			.then(json)
-			.then((data) => {
-				console.log("Request succeeded with JSON response", data);
+		Papa.parse(this.state.newsLocation, {
+			download: true,
+			header: true,
+			error: function(error) {
+				console.log("Parse Error", error)
 				
-				this.setState({
-					newsData: data.news,
-					isLoaded: true
-				});
-
-
-			})
-			.catch((error) => {
-				console.log("Request failed", error);
-				this.setState({
+				that.setState({
 					newsData: [],
 					isLoaded: true
 				});
-			});
+			},
+			complete: function(results) {
+				console.log("Parse success", results);
+				
+				that.setState({
+					newsData: results.data,
+					isLoaded: true
+				});
+			}
+		});
+
 	}
 
 	buildNews() {

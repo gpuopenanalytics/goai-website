@@ -47,6 +47,7 @@
   "dependencies": {
     "fuse.js": "^3.2.0",
     "mdi-react": "^2.0.46-hotfix.0",
+    "papaparse": "^4.3.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }

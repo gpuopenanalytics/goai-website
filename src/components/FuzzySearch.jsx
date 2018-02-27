@@ -33,12 +33,12 @@ class FuzzySearch extends React.Component {
 		  maxPatternLength: 24,
 		  minMatchCharLength: 2,
 		  keys: [
-		    "title",
-		    "tags"
+		    "Title",
+		    "Tags"
 		  ]
 		};
 
-		// add list to fuse
+		// add news list to fuse search
 		this.fuse = new Fuse(data, options);
 
 	}
@@ -48,18 +48,19 @@ class FuzzySearch extends React.Component {
 		const list = this.fuse.search(searchTerm)
 
 		const newsCards = list.map((d, i) => {
-			let image = d.img;
-			if (d.img === "") {
+
+			let image = d.ImageURL;
+			if (image == "") {
 				image = placeHolder;
 			}
 			return (
-				<a href={d.link} key={"news" + i} styleName="news-card" title={d.link} target="_blank">
+				<a href={d.URL} key={"news" + i} styleName="news-card" title={d.URL} target="_blank">
 					<div styleName="news-image">
 						<img src={image} styleName="news-img-src" />
 					</div>
-					<div styleName="news-title"> {d.title} </div>
-					<div styleName="news-tag"> {d.tags} </div>
-					<div styleName="news-date"> {d.date} </div>
+					<div styleName="news-title"> {d.Title} </div>
+					<div styleName="news-tag"> {d.Tags} </div>
+					<div styleName="news-date"> {d.Date} </div>
 				</a>
 			);
 		});
