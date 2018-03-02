@@ -27,11 +27,36 @@ import mapdlogo from "../img/mapd_logo.jpg";
 import simantexlogo from "../img/simantex_logo.jpg";
 
 class Home extends React.Component {
-	
+	constructor(props) {
+		super(props);
+		this.trackNav = this.trackNav.bind(this)
+		this.trackLink = this.trackLink.bind(this)
+
+	}
+
+	trackNav(title, path) {
+	//https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+		gtag('config', 'UA-114387697-1', {
+		  'page_title' : title,
+		  'page_path': path
+		});
+
+	}
+
+	trackLink(action, link) {
+	//https://developers.google.com/analytics/devguides/collection/gtagjs/events
+		gtag('event', action, {
+		  'event_category' : 'clicked',
+		  'event_label' : link
+		});
+
+	}
+
 	/* so nav click always moves to top of page */
 	componentDidMount() {
 		window.scrollTo(0, 0);
 	}
+
 
 	render() {
 		return (
@@ -46,7 +71,7 @@ class Home extends React.Component {
 						</div>
 
 						<div styleName="action-row">
-							<a href="https://github.com/gpuopenanalytics/demo-docker" styleName="action-col" target="_blank">
+							<a href="https://github.com/gpuopenanalytics/demo-docker" onClick={() => {this.trackLink('LinkClickTo', 'https://github.com/gpuopenanalytics/demo-docker')}} styleName="action-col" target="_blank">
 								<div styleName="action-header">
 									<GithubIcon styleName="btn-icon-large" />
 								</div>
@@ -55,7 +80,7 @@ class Home extends React.Component {
 								</div>
 							</a>
 
-							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="action-col" target="_blank">
+							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" onClick={() => {this.trackLink('LinkClickTo', 'https://groups.google.com/forum/#!forum/gpuopenanalytics')}} styleName="action-col" target="_blank">
 								<div styleName="action-header">
 									<GoogleGroupIcon styleName="btn-icon-large" />
 								</div>
@@ -82,7 +107,7 @@ class Home extends React.Component {
 								Our mission is to build a platform that allows data scientist to explore data, train machine learning algorithms, and build applications while primarily staying on the GPU
 							</p>
 							<p>
-								<a href="#/mission" styleName="link">
+								<a href="#/mission" onClick={() => {this.trackNav('NavClickTo', 'MISSION')}} styleName="link">
 									<HexagonIcon styleName="link-icon" /> Learn more in our Mission
 									section.
 								</a>
@@ -111,7 +136,7 @@ class Home extends React.Component {
 								We are just starting with GoAi. Help make our community stronger by participating in the inititive.
 							</p>
 							<p>
-								<a href="#/community" styleName="link">
+								<a href="#/community" onClick={() => {this.trackNav('NavClickTo', 'COMMUNITY')}} styleName="link">
 									<HexagonIcon styleName="link-icon" /> Learn more in our Community
 									section.
 								</a>
@@ -128,32 +153,32 @@ class Home extends React.Component {
 
 					<div styleName="member-row">
 						<div styleName="member-row-item">
-							<a href="https://anaconda.org/" target="_blank">
+							<a href="https://anaconda.org/" onClick={() => {this.trackLink('LinkClickTo', 'https://anaconda.org/')}} target="_blank">
 								<img src={anacondalogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
-							<a href="https://blazingdb.com/" target="_blank">
+							<a href="https://blazingdb.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://blazingdb.com/')}} target="_blank">
 								<img src={blazingdblogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
-							<a href="https://gunrock.github.io/" target="_blank">
+							<a href="https://gunrock.github.io/" onClick={() => {this.trackLink('LinkClickTo', 'https://gunrock.github.io/')}} target="_blank">
 								<img src={gunrocklogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
-							<a href="https://www.graphistry.com/" target="_blank">
+							<a href="https://www.graphistry.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://www.graphistry.com/')}} target="_blank">
 								<img src={graphistrylogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
-							<a href="https://www.mapd.com/" target="_blank">
+							<a href="https://www.mapd.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://www.mapd.com/')}} target="_blank">
 								<img src={mapdlogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
-							<a href="https://www.h2o.ai/" target="_blank">
+							<a href="https://www.h2o.ai/" onClick={() => {this.trackLink('LinkClickTo', 'https://www.h2o.ai/')}} target="_blank">
 								<img src={h2ologo} styleName="member-logo" />
 							</a>
 						</div>
@@ -187,7 +212,7 @@ class Home extends React.Component {
 								Members will help guide the development of projects, but anyone can be a contributor. And because its open, anyone can freely use the projects. 
 							</p>
 							<p>
-								<a href="#/projects" styleName="link">
+								<a href="#/projects" onClick={() => {this.trackNav('NavClickTo', 'PROJECTS')}} styleName="link">
 									<HexagonIcon styleName="link-icon" /> Learn more in our Projects
 									section.
 								</a>

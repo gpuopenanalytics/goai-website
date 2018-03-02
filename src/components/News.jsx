@@ -7,12 +7,11 @@ import styles from "./scss/news";
 import TwitterIcon from "mdi-react/twitterIcon";
 
 class News extends React.Component {
-
-	// NOTE: update news from google drive and make sure publish to csv is set
-	// https://docs.google.com/spreadsheets/d/1JCwXaeQGi_TjSgxSgfXZhr-rz4ZwpcKdYFCbdH2ntU0/edit#gid=0
-
 	constructor(props) {
 		super(props);
+
+		// NOTE: update news from google drive and make sure publish to csv is set
+		// https://docs.google.com/spreadsheets/d/1JCwXaeQGi_TjSgxSgfXZhr-rz4ZwpcKdYFCbdH2ntU0/edit#gid=0
 		this.state = {
 			newsLocation: "https://docs.google.com/spreadsheets/d/e/2PACX-1vREYtIIJ4K-cu-qfNu_9pZUpmcLJ46evvpaowRkz-ut4y2qzVAzXgwtQWGiRFf0lpZ-ZekQ366Q6nqw/pub?output=csv", 
 			isLoaded: false,
@@ -21,6 +20,26 @@ class News extends React.Component {
 		};
 
 		this.handleChange = this.handleChange.bind(this);
+		this.trackNav = this.trackNav.bind(this)
+		this.trackLink = this.trackLink.bind(this)
+	}
+
+	trackNav(title, path) {
+	//https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+		gtag('config', 'UA-114387697-1', {
+		  'page_title' : title,
+		  'page_path': path
+		});
+
+	}
+
+	trackLink(action, link) {
+	//https://developers.google.com/analytics/devguides/collection/gtagjs/events
+		gtag('event', action, {
+		  'event_category' : 'clicked',
+		  'event_label' : link
+		});
+
 	}
 
 	/* so nav click always moves to top of page */
@@ -95,7 +114,7 @@ class News extends React.Component {
 								around GoAi.
 							</p>
 							<p>
-								<a href="https://twitter.com/gpuoai"styleName="link" target="_blank">
+								<a href="https://twitter.com/gpuoai" onClick={() => {this.trackLink('LinkClickTo', 'https://twitter.com/gpuoai')}} styleName="link" target="_blank">
 									<TwitterIcon styleName="link-icon" /> Want
 									news faster? Look for #GoAi on
 									twitter.

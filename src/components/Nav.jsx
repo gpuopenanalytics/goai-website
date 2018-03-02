@@ -13,12 +13,21 @@ class Nav extends React.Component {
 						navItems: ['HOME','MISSION','PROJECTS','COMMUNITY', 'NEWS'] // change nav items here
 					}
 		this.handleClick = this.handleClick.bind(this)
+		this.trackNav = this.trackNav.bind(this)
 	}
 
 	handleClick() {
 		this.setState(prevState => ({
 			isToggleOn: !prevState.isToggleOn
 		}))
+	}
+
+	trackNav(title, path) {
+	//https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+		gtag('config', 'UA-114387697-1', {
+		  'page_title' : title,
+		  'page_path': path
+		});
 	}
 
 	render() {
@@ -34,7 +43,7 @@ class Nav extends React.Component {
 
 		// https://reacttraining.com/react-router/web/api/NavLink
 		const navBarItems = this.state.navItems.map((item,i) => {
-				return (<NavLink key={'NavLink'+i} styleName='navbar-item' activeStyle={{borderBottom: '2px solid rgba(129, 226, 102, 1)'}} to={'/'+item} > {item} </NavLink>)
+				return (<NavLink key={'NavLink'+i} styleName='navbar-item' activeStyle={{borderBottom: '2px solid rgba(129, 226, 102, 1)'}} to={'/'+item} onClick={() => {this.trackNav('NavClickTo', item)} }> {item} </NavLink>)
 		})
 
 		return (

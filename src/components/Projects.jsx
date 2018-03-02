@@ -10,7 +10,31 @@ import StackOverflowIcon from "mdi-react/stackOverflowIcon";
 import NotebookIcon from "mdi-react/bookOpenPageVariantIcon";
 
 class Projects extends React.Component {
-	
+	constructor(props) {
+		super(props);
+		this.trackNav = this.trackNav.bind(this)
+		this.trackLink = this.trackLink.bind(this)
+
+	}
+
+	trackNav(title, path) {
+	//https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+		gtag('config', 'UA-114387697-1', {
+		  'page_title' : title,
+		  'page_path': path
+		});
+
+	}
+
+	trackLink(action, link) {
+	//https://developers.google.com/analytics/devguides/collection/gtagjs/events
+		gtag('event', action, {
+		  'event_category' : 'clicked',
+		  'event_label' : link
+		});
+
+	}
+
 	/* so nav click always moves to top of page */
 	componentDidMount() {
 		window.scrollTo(0, 0);
@@ -61,26 +85,26 @@ class Projects extends React.Component {
 								<img src={GOAigdf} styleName="img-full" />
 							</p>
 							<p>
-								The GDF uses the <a href="https://arrow.apache.org/docs/memory_layout.html" styleName="link" target="_blank">Apache Arrow</a> columnar 
+								The GDF uses the <a href="https://arrow.apache.org/docs/memory_layout.html" onClick={() => {this.trackLink('LinkClickTo', 'https://arrow.apache.org/docs/memory_layout.html')}} styleName="link" target="_blank">Apache Arrow</a> columnar 
 								format to represent data on the GPU. Some Arrow features are not yet supported.
 							</p>
 							<p>
-								<a href="https://github.com/gpuopenanalytics/demo-docker/tree/master/notebook-demo-docker/demo/notebooks" styleName="link" target="_blank">
+								<a href="https://github.com/gpuopenanalytics/demo-docker/tree/master/notebook-demo-docker/demo/notebooks" onClick={() => {this.trackLink('LinkClickTo', 'https://github.com/gpuopenanalytics/demo-docker/tree/master/notebook-demo-docker/demo/notebooks')}} styleName="link" target="_blank">
 									<NotebookIcon styleName="link-icon" /> Try our iPython Notebook Demos.
 								</a>
 							</p>
 							<p>
-								<a href="https://github.com/gpuopenanalytics/libgdf/wiki/Technical-Overview" styleName="link" target="_blank">
+								<a href="https://github.com/gpuopenanalytics/libgdf/wiki/Technical-Overview" onClick={() => {this.trackLink('LinkClickTo', 'https://github.com/gpuopenanalytics/libgdf/wiki/Technical-Overview')}}  styleName="link" target="_blank">
 									<GithubIcon styleName="link-icon" /> Learn more at the Github Technical Overview.
 								</a>
 							</p>
 							<p>
-								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" styleName="link" target="_blank">
+								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" onClick={() => {this.trackLink('LinkClickTo', 'https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA')}} styleName="link" target="_blank">
 									<SlackIcon styleName="link-icon" /> Ask questions on our Slack team.
 								</a>
 							</p>
 							<p>
-								<a href="https://stackoverflow.com/questions/tagged/gdf" styleName="link" target="_blank">
+								<a href="https://stackoverflow.com/questions/tagged/gdf" onClick={() => {this.trackLink('LinkClickTo', 'https://stackoverflow.com/questions/tagged/gdf')}} styleName="link" target="_blank">
 									<StackOverflowIcon styleName="link-icon" /> Or resort to StackOverflow.
 								</a>
 							</p>

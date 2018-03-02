@@ -11,6 +11,16 @@ class FuzzySearch extends React.Component {
 		this.state = {
 			mounted: false
 		}
+		this.trackLink = this.trackLink.bind(this)
+
+	}
+
+	trackLink(action, link) {
+	//https://developers.google.com/analytics/devguides/collection/gtagjs/events
+		gtag('event', action, {
+		  'event_category' : 'clicked',
+		  'event_label' : link
+		});
 
 	}
 
@@ -54,7 +64,7 @@ class FuzzySearch extends React.Component {
 				image = placeHolder;
 			}
 			return (
-				<a href={d.URL} key={"news" + i} styleName="news-card" title={d.URL} target="_blank">
+				<a href={d.URL} key={"news" + i} onClick={() => {this.trackLink('LinkClickTo', d.URL)}} styleName="news-card" title={d.URL} target="_blank">
 					<div styleName="news-image">
 						<img src={image} styleName="news-img-src" />
 					</div>

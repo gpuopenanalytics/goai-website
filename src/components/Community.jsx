@@ -10,7 +10,31 @@ import GoogleGroupIcon from "mdi-react/forumIcon";
 
 
 class Community extends React.Component {
-	
+	constructor(props) {
+		super(props);
+		this.trackNav = this.trackNav.bind(this)
+		this.trackLink = this.trackLink.bind(this)
+
+	}
+
+	trackNav(title, path) {
+	//https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+		gtag('config', 'UA-114387697-1', {
+		  'page_title' : title,
+		  'page_path': path
+		});
+
+	}
+
+	trackLink(action, link) {
+	//https://developers.google.com/analytics/devguides/collection/gtagjs/events
+		gtag('event', action, {
+		  'event_category' : 'clicked',
+		  'event_label' : link
+		});
+
+	}
+
 	/* so nav click always moves to top of page */
 	componentDidMount() {
 		window.scrollTo(0, 0);
@@ -39,17 +63,17 @@ class Community extends React.Component {
 								If you have any questions, please reach out.
 							</p>
 							<p>
-								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" styleName="link" target="_blank"> 
+								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" onClick={() => {this.trackLink('LinkClickTo', 'https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA')}} styleName="link" target="_blank"> 
 									<SlackIcon styleName="link-icon" /> Slack Team
 								</a>
 							</p>
 							<p>
-								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">
+								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" onClick={() => {this.trackLink('LinkClickTo', 'https://groups.google.com/forum/#!forum/gpuopenanalytics')}} styleName="link" target="_blank">
 									<GoogleGroupIcon styleName="link-icon" /> Google Groups
 								</a>
 							</p>
 							<p>
-								<a href="mailto:admin@gpuopenanalytics.com?Subject=GoAi" title="email" styleName="link" target="_blank">
+								<a href="mailto:admin@gpuopenanalytics.com?Subject=GoAi" title="email" onClick={() => {this.trackLink('LinkClickTo', 'email')}} styleName="link" target="_blank">
 									<EmailIcon styleName="link-icon" /> admin@gpuopenanalytics.com 
 								</a>
 							</p>
@@ -67,12 +91,12 @@ class Community extends React.Component {
 								are currently using or planning to use a GoAi
 								project. For example, a database adding support for the GPU
 								Data Frame can be a GoAi adopter.  
-								Adopters should  <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">announce their plans on our
+								Adopters should  <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" onClick={() => {this.trackLink('LinkClickTo', 'https://groups.google.com/forum/#!forum/gpuopenanalytics')}} styleName="link" target="_blank">announce their plans on our
 								public Google Groups, </a> and we will add a link
 								to their project on the GoAi website. 
 							</p>
 							<p>
-								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">
+								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" onClick={() => {this.trackLink('LinkClickTo', 'https://groups.google.com/forum/#!forum/gpuopenanalytics')}} styleName="link" target="_blank">
 									<GoogleGroupIcon styleName="link-icon" /> Let us know you're using GoAi projects.
 								</a>
 							</p>
@@ -94,10 +118,10 @@ class Community extends React.Component {
 								or individuals that would like to help develop projects.
 								Since the GoAi is based around open projects, 
 								clone a repository on our GitHub channel and make a pull request.
-								To help faciliate the process, <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">let us know of your plans on our public Google Groups. </a>
+								To help faciliate the process, <a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" onClick={() => {this.trackLink('LinkClickTo', 'https://groups.google.com/forum/#!forum/gpuopenanalytics')}} styleName="link" target="_blank">let us know of your plans on our public Google Groups. </a>
 							</p>
 							<p>
-							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">
+							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" onClick={() => {this.trackLink('LinkClickTo', 'https://groups.google.com/forum/#!forum/gpuopenanalytics')}} styleName="link" target="_blank">
 									<GoogleGroupIcon styleName="link-icon" /> Let us know that you want to contribute.
 								</a>
 							</p>
@@ -105,8 +129,8 @@ class Community extends React.Component {
 						<div styleName="section-content-right-space">
 							<div styleName="subheader">Our Contributors</div>
 								<ul styleName="list-compact">
-									<li><a href="https://arrow.apache.org/" styleName="link"> Apache Arrow </a> </li>
-									<li><a href="http://www.simantex.com/" styleName="link"> Simantex </a> </li>
+									<li><a href="https://arrow.apache.org/" onClick={() => {this.trackLink('LinkClickTo', 'https://arrow.apache.org/')}} styleName="link" target="_blank"> Apache Arrow </a> </li>
+									<li><a href="http://www.simantex.com/" onClick={() => {this.trackLink('LinkClickTo', 'http://www.simantex.com/')}} styleName="link" target="_blank"> Simantex </a> </li>
 									<li>Siu Kwan Lam</li>
 									<li>Arno Candel</li>
 									<li>Minggang Yu </li>
@@ -171,7 +195,7 @@ class Community extends React.Component {
 								</li>
 							</ul>
 							<p>
-								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">Apply 
+								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" onClick={() => {this.trackLink('LinkClickTo', 'https://groups.google.com/forum/#!forum/gpuopenanalytics')}} styleName="link" target="_blank">Apply 
 								for memebership on our public Google Groups. </a>
 								Existing members will vote on the admission of
 								new members based on the above criteria. Note
@@ -179,7 +203,7 @@ class Community extends React.Component {
 								requirements.
 							</p>
 							<p>
-								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" styleName="link" target="_blank">
+								<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" onClick={() => {this.trackLink('LinkClickTo', 'https://groups.google.com/forum/#!forum/gpuopenanalytics')}} styleName="link" target="_blank">
 									<GoogleGroupIcon styleName="link-icon" /> Announce your plans to join GoAi.
 								</a>
 							</p>
@@ -188,12 +212,12 @@ class Community extends React.Component {
 						<div styleName="section-content-right-space">
 							<div styleName="subheader">Our Members</div>
 							<ul styleName="list-compact">
-								<li><a href="https://anaconda.org/" styleName="link" target="_blank"> Anaconda </a> </li>
-								<li><a href="https://blazingdb.com/" styleName="link" target="_blank"> BlazindDB </a> </li>
-								<li><a href="https://gunrock.github.io/" styleName="link" target="_blank"> Gunrock of UC Davis </a> </li>
-								<li><a href="https://www.graphistry.com/" styleName="link" target="_blank"> Graphistry </a> </li>
-								<li><a href="https://www.mapd.com/" styleName="link" target="_blank"> MapD </a> </li>
-								<li><a href="https://www.h2o.ai/" styleName="link" target="_blank"> H20.ai </a> </li>
+								<li><a href="https://anaconda.org/" onClick={() => {this.trackLink('LinkClickTo', 'https://anaconda.org/')}} styleName="link" target="_blank"> Anaconda </a> </li>
+								<li><a href="https://blazingdb.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://blazingdb.com/')}} styleName="link" target="_blank"> BlazindDB </a> </li>
+								<li><a href="https://gunrock.github.io/" onClick={() => {this.trackLink('LinkClickTo', 'https://gunrock.github.io/')}} styleName="link" target="_blank"> Gunrock of UC Davis </a> </li>
+								<li><a href="https://www.graphistry.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://www.graphistry.com/')}} styleName="link" target="_blank"> Graphistry </a> </li>
+								<li><a href="https://www.mapd.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://www.mapd.com/')}} styleName="link" target="_blank"> MapD </a> </li>
+								<li><a href="https://www.h2o.ai/" onClick={() => {this.trackLink('LinkClickTo', 'https://www.h2o.ai/')}} styleName="link" target="_blank"> H20.ai </a> </li>
 							</ul>
 						</div>
 					</div>

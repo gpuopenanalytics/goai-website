@@ -8,7 +8,31 @@ import SlackIcon from "mdi-react/slackIcon";
 import EmailIcon from "mdi-react/emailIcon";
 
 class Mission extends React.Component {
+	constructor(props) {
+		super(props);
+		this.trackNav = this.trackNav.bind(this)
+		this.trackLink = this.trackLink.bind(this)
 
+	}
+
+	trackNav(title, path) {
+	//https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+		gtag('config', 'UA-114387697-1', {
+		  'page_title' : title,
+		  'page_path': path
+		});
+
+	}
+
+	trackLink(action, link) {
+	//https://developers.google.com/analytics/devguides/collection/gtagjs/events
+		gtag('event', action, {
+		  'event_category' : 'clicked',
+		  'event_label' : link
+		});
+
+	}
+	
 	/* so nav click always moves to top of page */
 	componentDidMount() {
 		window.scrollTo(0, 0);
@@ -51,20 +75,20 @@ class Mission extends React.Component {
 								needing to move data off the GPU.
 							</p>
 							<p>
-								<a href="#/community" styleName="link" target="_blank">
+								<a href="#/community" onClick={() => {this.trackNav('NavClickTo', 'COMMUNITY')}} styleName="link" target="_blank">
 									<HexagonIcon styleName="link-icon" /> Interested in becoming a member or joining
 									in other ways? Learn more at our Community
 									page.
 								</a>
 							</p>
 							<p>
-								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" styleName="link" target="_blank">
+								<a href="https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA" onClick={() => {this.trackLink('LinkClickTo', 'https://join.slack.com/t/gpuoai/shared_invite/MjE0Njg5NDQ1MDQxLTE1MDA1MzQzNzgtODRkMTIxYTEzOA')}} styleName="link" target="_blank">
 									<SlackIcon styleName="link-icon" /> Have
 									some questions? Ask us on our Slack team.
 								</a>
 							</p>
 							<p>
-								<a href="mailto:admin@gpuopenanalytics.com?Subject=GoAi" title="email" styleName="link" target="_blank">
+								<a href="mailto:admin@gpuopenanalytics.com?Subject=GoAi" onClick={() => {this.trackLink('LinkClickTo', 'email')}} title="email" styleName="link" target="_blank">
 									<EmailIcon styleName="link-icon" /> Or reach
 									us at admin@gpuopenanalytics.com.
 								</a>
