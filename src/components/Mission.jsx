@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import CSSModules from "react-css-modules";
 import styles from "./scss/mission";
 
-import GOAigroup from "../img/GOAI-group-com.png";
+import GoAigroup from "../img/GoAi-group-com.png";
 import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
 import SlackIcon from "mdi-react/slackIcon";
 import EmailIcon from "mdi-react/emailIcon";
@@ -44,7 +44,7 @@ class Mission extends React.Component {
 				<section styleName="section-container-bg">
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
-							<h1 styleName="title">GOAi Mission</h1>
+							<h1 styleName="title">GoAi Mission</h1>
 						</div>
 					</div>
 					<div styleName="section-content-row">
@@ -96,7 +96,7 @@ class Mission extends React.Component {
 						</div>
 
 						<div styleName="section-content-right">
-							<img src={GOAigroup} styleName="img-med" />
+							<img src={GoAigroup} styleName="img-med" />
 						</div>
 					</div>
 				</section>

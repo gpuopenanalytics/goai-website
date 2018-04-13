@@ -102,7 +102,7 @@ class News extends React.Component {
 				<section styleName="section-container-bg">
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
-							<h1 styleName="title">GOAi News</h1>
+							<h1 styleName="title">GoAi News</h1>
 						</div>
 					</div>
 					<div styleName="section-content-row">

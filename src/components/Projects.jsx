@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import CSSModules from "react-css-modules";
 import styles from "./scss/projects";
 
-import GOAigdf from "../img/GOAI-group-gdf.png";
+import GoAigdf from "../img/GoAi-group-gdf.png";
 import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
 import GithubIcon from "mdi-react/githubCircleIcon";
 import SlackIcon from "mdi-react/slackIcon";
@@ -46,7 +46,7 @@ class Projects extends React.Component {
 				<section styleName="section-container-bg">
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
-							<h1 styleName="title"> GOAi Projects </h1>
+							<h1 styleName="title"> GoAi Projects </h1>
 						</div>
 					</div>
 					<div styleName="section-content-row">
@@ -82,7 +82,7 @@ class Projects extends React.Component {
 								between processes.
 							</p>
 							<p>
-								<img src={GOAigdf} styleName="img-full" />
+								<img src={GoAigdf} styleName="img-full" />
 							</p>
 							<p>
 								The GDF uses the <a href="https://arrow.apache.org/docs/memory_layout.html" onClick={() => {this.trackLink('LinkClickTo', 'https://arrow.apache.org/docs/memory_layout.html')}} styleName="link" target="_blank">Apache Arrow</a> columnar 

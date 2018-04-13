@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import CSSModules from "react-css-modules";
 import styles from "./scss/community";
 
-import GOAigroup from "../img/GOAI-group-com.png";
+import GoAigroup from "../img/GoAi-group-com.png";
 import GithubIcon from "mdi-react/githubCircleIcon";
 import EmailIcon from "mdi-react/emailIcon";
 import SlackIcon from "mdi-react/slackIcon";
@@ -47,7 +47,7 @@ class Community extends React.Component {
 					
 					<div styleName="section-header-row">
 						<div styleName="section-header-left">
-							<h1 styleName="title">GOAi Community</h1>
+							<h1 styleName="title">GoAi Community</h1>
 						</div>
 					</div>
 
@@ -79,7 +79,7 @@ class Community extends React.Component {
 							</p>
 						</div>
 						<div styleName="section-content-right">
-							<img src={GOAigroup} styleName="img-full" />
+							<img src={GoAigroup} styleName="img-full" />
 						</div>
 					</div>
 
@@ -213,7 +213,7 @@ class Community extends React.Component {
 							<div styleName="subheader">Our Members</div>
 							<ul styleName="list-compact">
 								<li><a href="https://anaconda.org/" onClick={() => {this.trackLink('LinkClickTo', 'https://anaconda.org/')}} styleName="link" target="_blank"> Anaconda </a> </li>
-								<li><a href="https://blazingdb.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://blazingdb.com/')}} styleName="link" target="_blank"> BlazindDB </a> </li>
+								<li><a href="https://blazingdb.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://blazingdb.com/')}} styleName="link" target="_blank"> BlazingDB </a> </li>
 								<li><a href="https://gunrock.github.io/" onClick={() => {this.trackLink('LinkClickTo', 'https://gunrock.github.io/')}} styleName="link" target="_blank"> Gunrock of UC Davis </a> </li>
 								<li><a href="https://www.graphistry.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://www.graphistry.com/')}} styleName="link" target="_blank"> Graphistry </a> </li>
 								<li><a href="https://www.mapd.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://www.mapd.com/')}} styleName="link" target="_blank"> MapD </a> </li>
