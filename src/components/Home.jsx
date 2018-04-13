@@ -14,7 +14,7 @@ import HexagonIcon from "mdi-react/arrowRightBoldHexagonOutlineIcon";
 import QuoteOpenIcon from "mdi-react/formatQuoteOpenIcon";
 import QuoteCloseIcon from "mdi-react/formatQuoteCloseIcon";
 
-import GOAilogo from "../img/GOAI-logo.png";
+import GoAilogo from "../img/GoAi-logo.png";
 
 
 import anacondalogo from "../img/anaconda_Logo.jpg";
@@ -66,7 +66,7 @@ class Home extends React.Component {
 						
 						<div styleName="hero-logo-row">
 							<div styleName="hero-tile">
-								<img src={GOAilogo} styleName="hero-logo" />
+								<img src={GoAilogo} styleName="hero-logo" />
 							</div>
 						</div>
 
