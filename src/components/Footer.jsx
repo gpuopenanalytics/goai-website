@@ -46,6 +46,7 @@ class Footer extends React.Component {
 						<Link styleName="item" to="/MISSION" onClick={() => {this.trackNav('NavClickTo', 'MISSION')}} >MISSION</Link>
 						<Link styleName="item" to="/COMMUNITY" onClick={() => {this.trackNav('NavClickTo', 'COMMUNITY')}} >COMMUNITY</Link>
 						<Link styleName="item" to="/PROJECTS" onClick={() => {this.trackNav('NavClickTo', 'PROJECTS')}} >PROJECTS</Link>
+						<Link styleName="item" to="/ANNOUNCEMENTS" onClick={() => {this.trackNav('NavClickTo', 'ANNOUNCEMENTS')}} >ANNOUNCEMENTS</Link>
 						<Link styleName="item" to="/NEWS" onClick={() => {this.trackNav('NavClickTo', 'NEWS')}} >NEWS</Link>
 						<br/>
 						<a styleName="item" href="https://twitter.com/gpuoai" onClick={() => {this.trackLink('LinkClickTo', 'https://twitter.com/gpuoai')}} title="twitter" target="_blank"><TwitterIcon styleName="icon" /></a>

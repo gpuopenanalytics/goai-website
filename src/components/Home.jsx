@@ -6,6 +6,7 @@ import styles from "./scss/home";
 import GithubIcon from "mdi-react/githubCircleIcon";
 import SlackIcon from "mdi-react/slackIcon";
 import GoogleGroupIcon from "mdi-react/forumIcon";
+import HornIcon from "mdi-react/bullhornIcon";
 import MatrixIcon from "mdi-react/matrixIcon";
 import SourceForkIcon from "mdi-react/sourceForkIcon";
 import SourceMergeIcon from "mdi-react/sourceMergeIcon";
@@ -80,12 +81,12 @@ class Home extends React.Component {
 								</div>
 							</a>
 
-							<a href="https://groups.google.com/forum/#!forum/gpuopenanalytics" onClick={() => {this.trackLink('LinkClickTo', 'https://groups.google.com/forum/#!forum/gpuopenanalytics')}} styleName="action-col" target="_blank">
+							<a href="#/ANNOUNCEMENTS" onClick={() => {this.trackNav('NavClickTo', 'ANNOUNCEMENTS')}} styleName="action-col">
 								<div styleName="action-header">
-									<GoogleGroupIcon styleName="btn-icon-large" />
+									<HornIcon styleName="btn-icon-large" />
 								</div>
 								<div styleName="action-footer">
-									reach out to the community <br/> on google groups
+									see our latest <br/> big announcement
 								</div>
 							</a>
 

@@ -4,6 +4,7 @@ import Home from "../components/Home";
 import Mission from "../components/Mission";
 import Projects from "../components/Projects";
 import Community from "../components/Community";
+import Announcements from "../components/Announcements";
 import News from "../components/News";
 import NoMatch from "../components/NoMatch";
 
@@ -17,6 +18,7 @@ class Main extends React.Component {
 				<Route path="/mission" component={Mission} />
 				<Route path="/projects" component={Projects} />
 				<Route path="/community" component={Community} />
+				<Route path="/announcements" component={Announcements} />
 				<Route path="/news" component={News} />
 				<Route component={NoMatch} />
 			</Switch>
