@@ -216,7 +216,7 @@ class Community extends React.Component {
 								<li><a href="https://blazingdb.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://blazingdb.com/')}} styleName="link" target="_blank"> BlazingDB </a> </li>
 								<li><a href="https://gunrock.github.io/" onClick={() => {this.trackLink('LinkClickTo', 'https://gunrock.github.io/')}} styleName="link" target="_blank"> Gunrock of UC Davis </a> </li>
 								<li><a href="https://www.graphistry.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://www.graphistry.com/')}} styleName="link" target="_blank"> Graphistry </a> </li>
-								<li><a href="https://www.mapd.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://www.mapd.com/')}} styleName="link" target="_blank"> MapD </a> </li>
+								<li><a href="https://www.omnisci.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://www.mapd.com/')}} styleName="link" target="_blank"> OmniSci </a> </li>
 								<li><a href="https://www.h2o.ai/" onClick={() => {this.trackLink('LinkClickTo', 'https://www.h2o.ai/')}} styleName="link" target="_blank"> H20.ai </a> </li>
 							</ul>
 						</div>

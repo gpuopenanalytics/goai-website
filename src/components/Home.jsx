@@ -24,7 +24,7 @@ import blazingdblogo from "../img/blazingDB_logo.jpg";
 import graphistrylogo from "../img/graphistry_logo.jpg";
 import gunrocklogo from "../img/gunrock_logo.jpg";
 import h2ologo from "../img/h2oai_logo.jpg";
-import mapdlogo from "../img/mapd_logo.jpg";
+import omniscilogo from "../img/omnisci_logo.jpg";
 import simantexlogo from "../img/simantex_logo.jpg";
 
 class Home extends React.Component {
@@ -174,8 +174,8 @@ class Home extends React.Component {
 							</a>
 						</div>
 						<div styleName="member-row-item">
-							<a href="https://www.mapd.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://www.mapd.com/')}} target="_blank">
-								<img src={mapdlogo} styleName="member-logo" />
+							<a href="https://www.mapd.com/" onClick={() => {this.trackLink('LinkClickTo', 'https://www.omnisci.com/')}} target="_blank">
+								<img src={omniscilogo} styleName="member-logo" />
 							</a>
 						</div>
 						<div styleName="member-row-item">
