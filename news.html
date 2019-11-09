@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>GoAi | GPU Open Analytics Initative</title>
+    <title>GoAi | GPU Open Analytics Imitative</title>
     <meta name="description" content="GPU Open Analytics Initiative">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="icon.png">
@@ -23,37 +23,61 @@
         <div class="header-min-icon"><img src="img/GoAi-group-speak.png" class="pure-img"></div>
     </div>
     </div>
-    <section>
+    <section class="mb-1">
         <div class="pure-g">
-            <div class="pure-u-1 pure-u-md-1-6"></div>
-            <div class="pure-u-1 pure-u-md-2-3">
+            <div class="pure-u-1 pure-u-md-1-3"></div>
+            <div class="pure-u-1 pure-u-md-1-3">
                 <h3>News and Press</h3>
                 <p>Keep up to date with events, blog posts, and news around GoAi.</p>
-                <a href="https://twitter.com/gpuoai"> Want news faster? Look for #GoAi on twitter.</a>
+                <a href="https://twitter.com/gpuoai"> <i class="zmdi zmdi-twitter"></i> Want news faster? <br/> Look for #GoAi on twitter.</a>
             </div>
-            <div class="pure-u-1 pure-u-md-1-6"></div>
+            <div class="pure-u-1 pure-u-md-1-3"></div>
         </div>
     </section>
     <section>
         <div class="pure-g">
-            <div class="pure-u-1 pure-u-md-1-6"></div>
-            <div class="pure-u-1 pure-u-md-2-3">
-                <--! "https://docs.google.com/spreadsheets/d/e/2PACX-1vREYtIIJ4K-cu-qfNu_9pZUpmcLJ46evvpaowRkz-ut4y2qzVAzXgwtQWGiRFf0lpZ-ZekQ366Q6nqw/pub?output=csv" -->
-                <div id="news-content"> Loading... </div>
+            <div class="pure-u-1 pure-u-md-1-3"></div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <div id="news-content"> <i class="zmdi zmdi-spinner zmdi-rotate-right zmdi-hc-spin"></i> Loading... </div>
             </div>
-            <div class="pure-u-1 pure-u-md-1-6"></div>
+            <div class="pure-u-1 pure-u-md-1-3"></div>
         </div>
-    </section> 
+    </section>
     <div id="footer"></div>
     <script>
     // load nav and footer html via jQuery
     $('#nav').load("nav.html")
     $('#footer').load("footer.html")
     </script>
-    <script src="/js/main.js"></script>
+    <script src="/js/papaparse.min.js"></script>
+    <script type="text/javascript">
+
+    Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vREYtIIJ4K-cu-qfNu_9pZUpmcLJ46evvpaowRkz-ut4y2qzVAzXgwtQWGiRFf0lpZ-ZekQ366Q6nqw/pub?output=csv", {
+        download: true,
+        header: true,
+        complete: function(results) {
+
+            $('#news-content').html(function(){
+
+                var content = results.data.map(function(row,index){
+
+                    var item = '<a href="'+ row.URL +'" class="news-link" target="_blank"> <div class="news-item"> <img src="'+ row.ImageURL +'" class="item-img" onerror="this.onerror=null; this.src=\'img/poly-place.jpg\'" /> <div class="item-title">'+ row.Title +'</div> <div class="item-tag">'+ row.Tags +'</div> <div class="item-date">'+ row.Date +'</div> </div> </a>';
+                    
+                    return item
+                })
+
+                return content
+            })
+
+        },
+        error: function(error) {
+            console.log("CSV parse error:", error)
+            $('#news-content').html('<h3> Could not find any news :( </h3>')
+        }
+    });
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114387697-1"></script>
 </body>
 
 </html>
-
